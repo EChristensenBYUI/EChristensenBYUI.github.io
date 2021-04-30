@@ -1,0 +1,80 @@
+main {
+    max-width: 1000px;
+    margin:0 auto;
+    display:block;
+}
+
+header {
+    background-color: darkblue;
+    color: white;
+}
+
+h1 {
+    font-family: 'Krona One', sans-serif;
+    margin-left: 1em;
+    padding-top: 1em;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight:300;
+    font-style:italic;
+    margin-left: 1em;
+    padding-bottom: 1em;
+}
+
+p {
+    margin: .5em 1.2em;
+    font-family: 'Raleway', sans-serif;
+}
+li {
+    font-family: 'Raleway', sans-serif;
+}
+
+h3 {
+    font-family: 'Krona One', sans-serif;
+}
+
+.griditem {
+    border: 2px solid grey;
+    width: 80%;
+    margin: 1em auto;
+    border-radius: 10px;
+    padding: 1em;
+}
+
+.griditem h3{
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.griditem img{
+    max-width: 360px;
+    margin: 0 auto;
+    display: block;
+    width: 90%;
+    border:5px solid darkblue;
+    padding:3px;
+}
+
+.griditem p {
+    margin-top: 1em;
+}
+
+.gridcontainer {
+    display: block;
+}
+
+@media screen and (min-width: 30em) {
+    .gridcontainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 70em) {
+    .gridcontainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
