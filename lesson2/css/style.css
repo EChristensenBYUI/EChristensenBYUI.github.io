@@ -78,3 +78,12 @@ h3 {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
+
+footer p{
+    text-align: center;
+   
+}
+
+#fcontent {
+    padding: .5em;
+}
