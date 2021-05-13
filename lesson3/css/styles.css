@@ -92,10 +92,10 @@ nav a:hover {
 	background-color: #cdd1df;
 	color: #0b1d51;
 }
-.active {
+/*.active {
 	color: #0b1d51;
     background-color: white;
-}
+} */
 
 .color {
     max-width: 500px;
