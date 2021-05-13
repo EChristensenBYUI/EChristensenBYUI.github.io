@@ -1,5 +1,4 @@
-//document.querySelector('#lastmod').innerHTML = document.lastModified;
-//document.querySelector('#year').innerHTML =  new Date().getFullYear();
+
 
 const hambutton = document.querySelector('.ham');
 const mainnav = document.querySelector('.navigation')
