@@ -11,7 +11,7 @@
 
     header h1 {
         margin-top: 0.5em;
-        font-size: 3.5em;
+        font-size: 2.2em;
     }
 
     header h2 {
@@ -44,22 +44,7 @@
     .hitem2 {
         width: 60%;
     }
-    nav ul { display: flex; }
-    nav ul li { flex: 1 1 100%; }
-
-    .navigation {
-        display: flex;
-
-    }
-
- .navigation li:first-child {
-        display: none;
-    }
-
-    .navigation li {
-        display: block;
-        flex: 1 1 auto;
-    } 
+   
 
     .weatherbox {
         display: block;
