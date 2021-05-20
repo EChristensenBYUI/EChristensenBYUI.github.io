@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Random color example — event handler property</title>
+    <style>
+      button {
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+      <p style="background-color: white; max-width: 170px; padding: .5rem;"><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#a_series_of_fortunate_events">Link to Exercise Practice</a></p>
+    <button>Change color</button>
+    <script>
+      const btn = document.querySelector('button');
+
+      function random(number) {
+        return Math.floor(Math.random()*number);
+      }
+
+      function bgChange() {
+        const rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+        document.body.style.backgroundColor = rndCol;
+      }
+
+      btn.onclick = bgChange;
+
+
+      //can also be rewritten like this: 
+
+      //const btn = document.querySelector('button');
+
+//function bgChange() {
+ // const rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+ // document.body.style.backgroundColor = rndCol;
+//}
+
+//btn.addEventListener('click', bgChange);
+    </script>
+  </body>
+</html>
