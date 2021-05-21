@@ -209,8 +209,9 @@ nav a:hover {
     padding-top: 10px;
 }
 .articlebox img {
-    width: 100%;
-    height: 150px;
+    width: 90%;
+    margin: 0 auto;
+    display: block;
 }
 
 .color {
@@ -236,7 +237,7 @@ footer a {
 .fcontent {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     margin: 0 auto;
 }
 
