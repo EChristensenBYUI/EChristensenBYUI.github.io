@@ -11,3 +11,9 @@ const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
 // long, medium, short options ... try them
 
 datefield.innerHTML = `${fulldate}`;
+
+
+let thedate = new Date();
+	if (thedate.getDay() == 5) {
+		document.querySelector('.banner').style.display="block";
+	}
