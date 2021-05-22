@@ -193,6 +193,8 @@ nav a:hover {
 .topimg {
     position: relative;
     margin: 2.5em 0;
+    display: flex;
+    align-items: center;
 }
 
 .weatherbox {
@@ -202,9 +204,9 @@ nav a:hover {
     background-color: #214E34;
     border:3px solid #0b1d51;
     position: absolute;
-    margin-top: -160px;
+
     margin-left: 30px;
-    margin-bottom: 2.8em;
+
 }
 
 .weatherbox h3 {
