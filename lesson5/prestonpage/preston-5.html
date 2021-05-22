@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Elise Christensen's WDD230 Assignment - Site Plan">
+    <meta name="description" content="The Leaf on the Wind Weather - Preston Page">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/medium.css">
@@ -12,10 +12,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:ital,wght@0,300;1,300&family=Roboto&display=swap" rel="stylesheet"> 
     <link rel="shortcut icon" href="/lesson5/prestonpage/images/favicon.ico">
-    <title>Leaf on the Wind weather</title>
+    <script src="https://kit.fontawesome.com/ec693cf62d.js" crossorigin="anonymous"></script>
+    <title>Leaf on the Wind Weather</title>
 </head>
 <body>
- 
+    <div class="banner">
+        <p>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</p>
+    </div>
     <header>
         <div class="hgroup">
             <div class="hitem1"><img src="images/coloricon.png" alt="leaf on the wind icon"></div>
@@ -39,28 +42,52 @@
         </ul>
     </nav>
     <main>
-        <div class="banner">
-            <p>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</p>
-        </div>
+
     <h2>Preston, Idaho</h2>
         <div class="topimg"><img src="images/hero1-min.jpg" alt="placeholder">
         <div class="weatherbox"><h3>Weather Summary</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio qui vero inventore, sapiente debitis repellendus similique dignissimos quasi doloremque eligendi.</p></div></div>
+        <p><strong>Currently:</strong> Sunny</p>
+        <p><strong>High:</strong> 76&#176;F</p>
+        <p><strong>Wind Chill:</strong> -10&#176;</p>
+        <p><strong>Humidity:</strong> 69%</p>
+        <p><strong>Wind Speed:</strong> 5mph</p>
+    </div></div>
 
         <div class="forecast">
             <h3>Five Day Forecast</h3>
             <div class="forecastboxes">
-                <img src="images/imageplaceholder.png" alt="forecast box placeholder">
-                <img src="images/imageplaceholder.png" alt="forecast box placeholder">
-                <img src="images/imageplaceholder.png" alt="forecast box placeholder">
-                <img src="images/imageplaceholder.png" alt="forecast box placeholder">
-                <img src="images/imageplaceholder.png" alt="forecast box placeholder">
+                <div class="boxitem">
+                    <h4>Sat</h4>
+                    <i class="fas fa-cloud-sun-rain"></i>
+                    <p>65&#176;F</p>
+                </div>
+                <div class="boxitem">
+                    <h4>Sun</h4>
+                    <i class="fas fa-cloud-sun"></i>
+                    <p>76&#176;F</p>
+                </div>
+                <div class="boxitem">
+                    <h4>Mon</h4>
+                    <i class="fas fa-cloud-showers-heavy"></i>
+                    <p>68&#176;F</p>
+                </div>
+                <div class="boxitem">
+                    <h4>Tue</h4>
+                    <i class="fas fa-sun"></i>
+                    <p>80&#176;F</p>
+                </div>
+                <div class="boxitem">
+                    <h4>Wed</h4>
+                    <i class="fas fa-cloud-sun-rain"></i>
+                    <p>75&#176;F</p>
+                </div>
+
             </div>
         </div>
         <div class="articlebox">
             <h3>Aricle Title</h3>
             <img src="images/article_balloons.png" alt="placeholder">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis quod tempora voluptate itaque voluptatem doloremque dicta ex distinctio laudantium soluta.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium nobis perspiciatis quam non veritatis minima molestias impedit facilis et. Possimus aut recusandae assumenda quibusdam exercitationem porro nemo officiis vitae. Labore culpa omnis est commodi exercitationem beatae nostrum dolores, veritatis ducimus impedit, ipsa distinctio, ea maiores. Voluptatum quo quibusdam culpa fuga rerum. Sit assumenda sequi quo dolorem facilis sunt hic doloribus, eligendi, beatae aliquid sint harum eveniet. </p>
             <div class="clearfix"></div>
 
         </div>
@@ -72,6 +99,11 @@
           <h3>Contact Information</h3>
           <p>Email: example@example.com</p>
           <p>Phone: 555-555-5555</p>
+          <div class="socialicons">
+            <a href="www.facebook.com"><i class="fab fa-facebook"></i></a>
+            <a href="instagram.com" style="margin: 0 .5em;"><i class="fab fa-instagram"></i></a>
+            <a href="youtube.com"><i class="fab fa-youtube"></i></a>
+          </div>
         </div>
     <div class="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.773853438026!2d-111.91534443111685!3d42.09974162639047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1621610329962!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>

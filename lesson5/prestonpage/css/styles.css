@@ -171,13 +171,13 @@ nav a:hover {
 
 .banner {
     display: none;
-    background-color:#0b1d51;
+    background-color:#8fdb5bb3;
     width: 100%;
     
 }
 
 .banner p {
-    color: white;
+    color: #0b1d51;
     font-weight: bold;
     text-align: center;
     padding: 1rem;
@@ -189,19 +189,45 @@ nav a:hover {
     border-bottom: 5px solid #0b1d51;
 }
 
-.forecast {
-    background-color:#cdd1df;
-    border: 5px solid #0b1d51;
-    text-align: center;
+   
+.topimg {
+    position: relative;
+    margin: 2.5em 0;
 }
 
-.forecastboxes{
+.weatherbox {
+    display: block;
+    max-width: 300px;
+    z-index: 500;
+    background-color: #214E34;
+    border:3px solid #0b1d51;
+    position: absolute;
+    margin-top: -160px;
+    margin-left: 30px;
+    margin-bottom: 2.8em;
+}
+
+.weatherbox h3 {
+    color: white;
+    margin: .5em;
+}
+
+.weatherbox p {
+    line-height: 10px;
+
+    color: white;
+}
+
+
+
+.forecastboxes, .forecast{
     display: none;
 }
 
 .articlebox {
     border: 5px solid #0b1d51;
-    border-top: none;
+    margin-bottom: 2rem;
+
 }
 
 .articlebox h3 {
@@ -212,6 +238,7 @@ nav a:hover {
     width: 90%;
     margin: 0 auto;
     display: block;
+    border: 5px solid #0b1d51;
 }
 
 .color {
@@ -244,6 +271,24 @@ footer a {
 .contact {
     width: 80%;
 }
+
+.contact p {
+    margin: 0;
+    line-height: 1.2rem;
+}
+
+.contact h3 {
+    margin-left: 0;
+}
+
+.socialicons {
+    color: white;
+    font-size: 1.5rem;
+    margin-top: .8rem;
+}
+
+
+
 
 .map {
     width: 80%;
