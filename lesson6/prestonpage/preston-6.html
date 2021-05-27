@@ -53,10 +53,10 @@
               </picture>
         <div class="weatherbox"><h3>Weather Summary</h3>
         <p><strong>Currently:</strong> Sunny</p>
-        <p><strong>High:</strong> 76&#176;F</p>
-        <p><strong>Wind Chill:</strong> -10&#176;</p>
+        <p><strong>Current Temp: </strong><span id="temp">45</span>&#176;F</p>
+        <p><strong>Wind Chill:</strong> <span id="windOutput"></span>&#176;F</p>
         <p><strong>Humidity:</strong> 69%</p>
-        <p><strong>Wind Speed:</strong> 5mph</p>
+        <p><strong>Wind Speed: </strong><span id="speed">5</span>mph</p>
     </div></div>
 
         <div class="forecast">
@@ -134,4 +134,5 @@
   }
 });
 </script>
+<script src="js/windchill.js"></script>
 </html>
