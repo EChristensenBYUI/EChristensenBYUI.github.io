@@ -44,7 +44,13 @@
     <main>
 
     <h2>Preston, Idaho</h2>
-        <div class="topimg"><img src="images/hero1-min.jpg" alt="placeholder">
+        <div class="topimg">
+            <picture>
+                <source media="(min-width: 600px)" srcset="images/hero1-min.jpg">
+                <source media="(min-width: 421px)" srcset="images/hero1_520px.jpg">  
+                <source media="(max-width: 420px)" srcset="images/hero1_420px.png">
+                <img src="images/hero1-min.jpg" alt="small town">
+              </picture>
         <div class="weatherbox"><h3>Weather Summary</h3>
         <p><strong>Currently:</strong> Sunny</p>
         <p><strong>High:</strong> 76&#176;F</p>
@@ -124,6 +130,7 @@
        'Roboto',
        'Dancing Script',
        'Poppins'
+  ]
   }
 });
 </script>
