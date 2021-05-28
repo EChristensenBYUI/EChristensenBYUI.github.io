@@ -14,7 +14,7 @@ window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove('
 document.querySelector('#lastmod').innerHTML = document.lastModified;
 document.querySelector('#year').innerHTML =  new Date().getFullYear();
 
-const datefield = document.querySelector("date");
+const datefield = document.querySelector("#currentyear");
 
 // derive the current date using a date object
 const now = new Date();
