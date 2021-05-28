@@ -42,30 +42,31 @@ let thedate = new Date();
  * Output: Calculated Wind Chill
  */
 
+ var tempF = document.querySelector('#temp').innerHTML;
+ var speed = document.querySelector('#speed').innerHTML;
+ console.log(tempF, speed);
 
 
- function getInfo() {
-    var tempF = document.querySelector('#temp').innerHTML;
-    var speed = document.querySelector('#speed').innerHTML;
-    console.log(tempF, speed);
+
 
     if (tempF <= 50 && speed > 3) {
         let answer = windChill(tempF, speed);
-
+        document.querySelector('#windOutput').innerHTML = answer + '&#176;F';
 
     }
        
-    else {  let answer = 'N/A';}
+    else {  document.querySelector('#windOutput').innerHTML = 'N/A';}
       
 
     document.querySelector('#windOutput').innerHTML = answer;
 
- }
+
 
  function windChill(tempF, speed) {
      let partOne = 35.74 + (0.6215 * tempF);
      let firstExp = 35.74 * (Math.pow(speed, 0.16));
      let secondExp = 0.4275 * tempF * (Math.pow(speed, 0.16));
      let result = partOne - firstExp + secondExp;
-     return result;
+     let result2 = Math.trunc(result);
+     return result2;
     }
