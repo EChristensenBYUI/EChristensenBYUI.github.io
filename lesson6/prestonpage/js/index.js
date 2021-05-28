@@ -45,8 +45,8 @@ let thedate = new Date();
 
 
  function getInfo() {
-    var tempF = parseFloat(document.querySelector('#temp').value);
-    var speed = parseFloat(document.querySelector('#speed').value);
+    var tempF = document.querySelector('#temp').innerHTML;
+    var speed = document.querySelector('#speed').innerHTML;
     console.log(tempF, speed);
 
     if (tempF <= 50 && speed > 3) {
@@ -55,7 +55,8 @@ let thedate = new Date();
 
     }
        
-    let answer = 'N/A';
+    else {  let answer = 'N/A';}
+      
 
     document.querySelector('#windOutput').innerHTML = answer;
 
