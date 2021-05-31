@@ -1,0 +1,311 @@
+body {
+    font-size: 16px;
+}
+
+
+
+.hgroup {
+    margin-bottom: -5px;
+}
+
+header img {
+    max-width: 100px;
+    margin: 0 auto 1em auto;
+    display: block;
+    padding-top: 1em;
+    float: left;
+    margin-left: 1em;
+}
+
+header h1 {
+
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5em;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: #0b1d51;
+    padding-top: .5em;
+
+}
+
+header h2 {
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    text-align: center;
+    color: #0b1d51;
+    margin-bottom: 0;
+    padding-bottom: 1em;
+    font-size: 1em;
+    max-width: 120px;
+}
+
+header {
+    background-color: #cdd1df;
+    outline: 5px solid #0b1d51;
+    outline-offset: -5px;
+    margin-bottom: -5px;
+}
+
+
+.hgroup {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.hitem1 {
+   
+    width: 30%;
+}
+
+.hitem1 img {
+    width: 80%;
+
+}
+.hitem2 {
+    width: 60%;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3em;
+    color: #0b1d51;
+    margin-left: 10px;
+
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    margin-left: 10px;
+}
+
+h3 {
+    margin-left: 20px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5em;
+}
+
+.navigation {
+	list-style: none;
+	padding: 0;
+}
+
+.navigation li:first-child {
+	display: block;
+    max-width: 75px;
+    margin-top: -50px;
+    margin-left: 80%;
+    position: absolute;
+    background-color: transparent;
+}
+
+.navigation li:first-child a {
+    border: none;
+    color:#0b1d51;
+    font-size: 1.8em;
+}
+
+.navigation li:first-child a:hover {
+    background: transparent;
+}
+.navigation li {
+    
+	display: none;
+}
+
+.navigation a {
+    display: block;
+}
+
+.active {
+    background-color:white;
+
+}
+
+.active a {
+    color:#0b1d51;
+    font-weight: bold;
+}
+
+.responsive li {
+	display: block;
+}
+
+nav {
+	background-color: #0b1d51;
+	text-align: center;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    outline: 5px solid #0b1d51;
+    outline-offset: -5px;
+    margin: 0 auto;
+    
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+nav ul li a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+	font-size: 1.2rem;
+    border: 2.5px solid #0b1d51;
+}
+nav a:hover {
+	background-color: #cdd1df;
+	color: #0b1d51;
+}
+
+
+.banner {
+    display: none;
+    background-color:#8fdb5bb3;
+    width: 100%;
+    
+}
+
+.banner p {
+    color: #0b1d51;
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem;
+}
+
+.topimg img {
+    width: 100%;
+    border-top: 5px solid #0b1d51;
+    border-bottom: 5px solid #0b1d51;
+}
+
+   
+.topimg {
+    position: relative;
+    margin: 2.5em 0;
+    display: flex;
+    align-items: center;
+}
+
+.weatherbox {
+    display: block;
+    max-width: 300px;
+    z-index: 500;
+    background-color: #214E34;
+    border:3px solid #0b1d51;
+    position: absolute;
+
+    margin-left: 30px;
+
+}
+
+.weatherbox h3 {
+    color: white;
+    margin: .5em;
+}
+
+.weatherbox p {
+    line-height: 10px;
+
+    color: white;
+}
+
+
+
+.forecastboxes, .forecast{
+    display: none;
+}
+
+.articlebox {
+    border: 5px solid #0b1d51;
+    margin-bottom: 2rem;
+
+}
+
+.articlebox h3 {
+    margin-top: 0;
+    padding-top: 10px;
+}
+.articlebox img {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    border: 5px solid #0b1d51;
+}
+
+.color {
+    max-width: 500px;
+    margin: 0 auto;
+    display: block;
+    width: 90%;
+}
+
+footer {
+    background-color: #0b1d51;
+	text-align: center;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    padding: 5px;
+}
+
+footer a {
+    color: white;
+}
+
+.fcontent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.contact {
+    width: 80%;
+}
+
+.contact p {
+    margin: 0;
+    line-height: 1.2rem;
+}
+
+.contact h3 {
+    margin-left: 0;
+}
+
+.socialicons {
+    color: white;
+    font-size: 1.5rem;
+    margin-top: .8rem;
+}
+
+
+
+
+.map {
+    width: 80%;
+}
+
+.map iframe{
+    width: 80%;
+    margin: 1em auto 2em auto;
+    height: 150px;
+
+}
+
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

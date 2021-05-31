@@ -1,5 +1,7 @@
 body {
     font-size: 16px;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 main {
@@ -47,17 +49,32 @@ footer p{
 
 
 h2 {
-    margin-left: 10px;
+    margin-left: 20px;
     border-bottom: 1px solid grey;
     width: 95%;
 }
 
-footer a {
-    color: white;
+.imagepractice {
+    display: grid;
+    justify-content: center;
 }
 
-.imagepractice {
-    align-items: center;
+.imagepractice img[data-src] {
+    filter: blur(0.2em);
+}
+
+.imagepractice img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+    margin: 10px;
+    border: 7px solid darkgreen;
+    padding: 2px;
+}
+
+
+
+footer a {
+    color: white;
 }
 
 @media screen and (min-width: 32.5em){
