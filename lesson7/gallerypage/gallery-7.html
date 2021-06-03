@@ -33,70 +33,75 @@
         <ul class="navigation">
             <li><a class="ham" href="#">&#9776;</a></li>
             <li><a href="#"> Home</a></li>
-            <li class="active"><a href="#">Preston</a></li>
+            <li><a href="/lesson6/prestonpage/preston-6.html">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
             <li><a href="#">Storm Center</a></li>
-            <li><a href="#">Gallery</a></li> 
+            <li class="active"><a href="#">Gallery</a></li> 
 
         </ul>
     </nav>
-    <main>
+    <main class="gallery">
 
-    <h2>Preston, Idaho</h2>
-        <div class="topimg">
+    <h2>Weather Gallery</h2>
+   
+    <div class="weathergallery">
+        <div class="galleryItem">
             <picture>
-                <source media="(min-width: 600px)" srcset="images/hero1-min.jpg">
-                <source media="(min-width: 421px)" srcset="images/hero1_520px.jpg">  
-                <source media="(max-width: 420px)" srcset="images/hero1_420px.png">
-                <img src="images/hero1-min.jpg" alt="small town">
-              </picture>
-        <div class="weatherbox"><h3>Weather Summary</h3>
-        <p><strong>Currently:</strong> Sunny</p>
-        <p><strong>Current Temp: </strong><span id="temp">20</span></p>
-        <p><strong>Wind Chill:</strong> <span id="windOutput"></span></p>
-        <p><strong>Humidity:</strong> 69%</p>
-        <p><strong>Wind Speed: </strong><span id="speed">5</span>mph</p>
-    </div></div>
-
-        <div class="forecast">
-            <h3>Five Day Forecast</h3>
-            <div class="forecastboxes">
-                <div class="boxitem">
-                    <h4>Sat</h4>
-                    <i class="fas fa-cloud-sun-rain"></i>
-                    <p>65&#176;F</p>
-                </div>
-                <div class="boxitem">
-                    <h4>Sun</h4>
-                    <i class="fas fa-cloud-sun"></i>
-                    <p>76&#176;F</p>
-                </div>
-                <div class="boxitem">
-                    <h4>Mon</h4>
-                    <i class="fas fa-cloud-showers-heavy"></i>
-                    <p>68&#176;F</p>
-                </div>
-                <div class="boxitem">
-                    <h4>Tue</h4>
-                    <i class="fas fa-sun"></i>
-                    <p>80&#176;F</p>
-                </div>
-                <div class="boxitem">
-                    <h4>Wed</h4>
-                    <i class="fas fa-cloud-sun-rain"></i>
-                    <p>75&#176;F</p>
-                </div>
-
-            </div>
+                <img src="/lesson7/gallerypage/images/placeholder.png" data-src="/lesson7/gallerypage/images/weather_cloudy-min.png" alt="Cloudy weather">
+            </picture>
+            <p>Cloudy Weather</p>
         </div>
-        <div class="articlebox">
-            <h3>Hot Air Balloon Event</h3>
-            <img src="images/article_balloons.png" alt="Hot Air balloons at sunset">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium nobis perspiciatis quam non veritatis minima molestias impedit facilis et. Possimus aut recusandae assumenda quibusdam exercitationem porro nemo officiis vitae. Labore culpa omnis est commodi exercitationem beatae nostrum dolores, veritatis ducimus impedit, ipsa distinctio, ea maiores. Voluptatum quo quibusdam culpa fuga rerum. Sit assumenda sequi quo dolorem facilis sunt hic doloribus, eligendi, beatae aliquid sint harum eveniet. </p>
-            <div class="clearfix"></div>
 
+        <div class="galleryItem">
+            <picture>
+                <img src="/lesson7/gallerypage/images/placeholder.png" data-src="/lesson7/gallerypage/images/weather_lightning-min.png" alt="Lightning">
+            </picture>
+            <p>Lightning</p>
         </div>
+
+        <div class="galleryItem">
+            <picture>
+                <img src="/lesson7/gallerypage/images/placeholder.png" data-src="/lesson7/gallerypage/images/weather_rainbow-min.png" alt="Rainbow">
+            </picture>
+            <p>Rainbow</p>
+        </div>
+
+        <div class="galleryItem">
+            <picture>
+                <img src="/lesson7/gallerypage/images/placeholder.png" data-src="/lesson7/gallerypage/images/weather_rain-min.png" alt="Rain on some steps">
+            </picture>
+            <p>Rain on campus steps</p>
+        </div>
+
+        
+        <div class="galleryItem">
+            <picture>
+                <img src="/lesson7/gallerypage/images/placeholder.png" data-src="/lesson7/gallerypage/images/weather_sunny-min.png" alt="Sunny Day">
+            </picture>
+            <p>A Sunny Day</p>
+        </div>
+
+        <div class="galleryItem">
+            <picture>
+                <img src="/lesson7/gallerypage/images/placeholder.png" data-src="/lesson7/gallerypage/images/weather_windy-min.png" alt="Windy Day">
+            </picture>
+            <p>Wind blowing the crops</p>
+        </div>
+
+    </div>
+
+    <div class="days">
+        <p>Number of days since user last visited the Gallery page: <span class="days"></span></p>
+    </div>
+        
+
+
+
+
+
+
+
 </main>
 
 <footer>
@@ -119,7 +124,7 @@
     <p>&#169; <span id="year"></span> | Elise Christensen | Nevada | <a href="https://www.byui.edu/online">BYUI Online Learning</a> | <a href="../../index.html">Assignment Portal</a></p>
     <p>Last Modified: <span id="lastmod"></span></p>
   </footer>
-  <script src="js/index.js"></script> 
+  <script src="js/index.js" defer></script> 
 
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
