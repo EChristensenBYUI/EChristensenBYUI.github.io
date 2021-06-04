@@ -298,17 +298,24 @@ footer a {
 
 }
 
+.galleryItem {
+    max-width: 300px;
+}
 
-
+.galleryItem img[data-src] {
+    filter: blur(0.2em);
+}
 .galleryItem img {
     max-width: 300px;
     width: 100%;
     margin: 0 auto;
+    filter: blur(0em);
+    transition: filter 0.5s;
 }
 
 .galleryItem p {
     margin: 0;
-    padding: 10px 0;
+    padding: 10px;
 }
 
 .map {
