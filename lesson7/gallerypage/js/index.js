@@ -93,9 +93,9 @@ const numDays = difference / (1000 * 3600 * 24);
 
 /*const storeDays = () => {
   localStorage.setItem('firstV', now);
-} */
+} <---Incorrect, localStorage should be outside of statements, and function is uneccessary*/
 
-document.querySelector('.days').innerHTML = 'Number of days since you have visited us:' + numDays.toFixed(0);
+document.querySelector('.days').innerHTML = 'Thanks for stopping by! It has been ' + numDays.toFixed(0) + ' days since you visited us';
 }
 
 else {
