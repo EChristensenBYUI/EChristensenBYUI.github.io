@@ -300,6 +300,7 @@ footer a {
 
 .galleryItem {
     max-width: 300px;
+    margin: .5em auto;
 }
 
 .galleryItem img[data-src] {
@@ -316,6 +317,10 @@ footer a {
 .galleryItem p {
     margin: 0;
     padding: 10px;
+    text-align: center;
+    background-color: #0b1d51;
+    color: white;
+    font-style: italic;
 }
 
 .daysSince {

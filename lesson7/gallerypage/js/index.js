@@ -91,9 +91,9 @@ var first = new Date(localStorage.getItem('firstV'));
 var difference = now.getTime() - first.getTime();
 const numDays = difference / (1000 * 3600 * 24);
 
-const storeDays = () => {
+/*const storeDays = () => {
   localStorage.setItem('firstV', now);
-}
+} */
 
 document.querySelector('.days').innerHTML = 'Number of days since you have visited us:' + numDays.toFixed(0);
 }
@@ -101,3 +101,5 @@ document.querySelector('.days').innerHTML = 'Number of days since you have visit
 else {
   document.querySelector('.days').innerHTML = 'Welcome! This is your first visit to the page!';
 }
+
+localStorage.setItem('firstV', now);
