@@ -30,6 +30,8 @@
     }
     .galleryItem:hover {
         box-shadow: 0px 0px 8px black;
+        transform: scale(1.05);
+        transition: .2s;
     }
 
 

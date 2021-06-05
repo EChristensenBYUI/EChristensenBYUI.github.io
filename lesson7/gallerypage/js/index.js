@@ -46,8 +46,8 @@ let thedate = new Date();
 
 //This part is almost like adding css
     const imgOptions = {
-      rootMargin: '0px 0px 50px 0px',
-      threshold: 1
+      rootMargin: '0px 0px -300px 0px',
+      threshold: 3
     };
 //This part is making sure the IntersectionalObserver is a thing in that particular browser
     if('IntersectionalObserver' in window) {
@@ -78,8 +78,26 @@ let thedate = new Date();
       //on next assignmnet try just doing load="lazy" attribute in html
 
 
-//Local Storage
+//Local Storage - days since previous visit
 
-var date = localStorage.getItem(date);
+//define original date ('first'), store in local storage ('firstV')
+//find the difference between that date and todays date ('difference') and calculate
 
-console.log(date)
+if ("firstV" in localStorage){
+
+
+
+var first = new Date(localStorage.getItem('firstV'));
+var difference = now.getTime() - first.getTime();
+const numDays = difference / (1000 * 3600 * 24);
+
+const storeDays = () => {
+  localStorage.setItem('firstV', now);
+}
+
+document.querySelector('.days').innerHTML = 'Number of days since you have visited us:' + numDays.toFixed(0);
+}
+
+else {
+  document.querySelector('.days').innerHTML = 'Welcome! This is your first visit to the page!';
+}
