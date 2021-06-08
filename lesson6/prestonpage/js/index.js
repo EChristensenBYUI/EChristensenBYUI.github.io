@@ -58,7 +58,7 @@ let thedate = new Date();
     else {  document.querySelector('#windOutput').innerHTML = 'N/A';}
       
 
-    document.querySelector('#windOutput').innerHTML = answer;
+  //  document.querySelector('#windOutput').innerHTML = answer;
 
 
 
