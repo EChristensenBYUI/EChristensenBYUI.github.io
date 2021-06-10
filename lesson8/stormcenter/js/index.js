@@ -103,3 +103,11 @@ else {
 }
 
 localStorage.setItem('firstV', now);
+
+
+//Range for Storm Center
+
+function adjustRating(rating) {
+  document.getElementById("ratingvalue").innerHTML = rating;
+}
+
