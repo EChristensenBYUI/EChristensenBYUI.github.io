@@ -15,7 +15,7 @@
     <script src="https://kit.fontawesome.com/ec693cf62d.js" crossorigin="anonymous"></script>
     <title>Leaf on the Wind Weather</title>
 </head>
-<body>
+<body class="stormcenter">
     <div class="banner">
         <p>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</p>
     </div>
@@ -41,12 +41,13 @@
 
         </ul>
     </nav>
-    <main class="gallery">
+    <main class="storm">
+        <div class="formcontainer">
 
-    <h1>Storm Center</h1>
+    <h1 class="storm">Storm Center</h1>
     <form method="get" action="thanks.html">
         <fieldset>
-            <legend>Contact Information</legend>
+            <h4>Contact Information</h4>
             <label class="top">First and Last Name <input type="text" name="name" pattern="[A-Za-z]{5}" required></label>
 
             <label class="top">
@@ -60,7 +61,7 @@
             </label>
         </fieldset>
         <fieldset>
-            <legend>Weather Occurance Information </legend>
+            <h4>Weather Occurance Information </h4>
             <label class="top">Date of Weather Occurance <input type="date" name="date"></label>
             <label class="top">Type of Weather Occurance <input list="stormTypes" placeholder="Please Select Storm Type" name="stormType">
                 <datalist id="stormTypes">
@@ -73,7 +74,7 @@
                     
                 </datalist>
              </label>
-             <label class="top"
+             <label class="flexly"
                 for="rating">Severity of Storm (between 1 and 10) &nbsp;&nbsp;&nbsp; <input type="range" name="severity" min="1" max="10" value="5" id="rating" list="tickmarks"
                 oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"> <span id="ratingvalue">5</span>
              </label>
@@ -88,15 +89,15 @@
              </label>
              <div>User in danger?</div>
              <label class="sbs">
-                <input type="radio" name="danger" value="yes">Yes
+                <input type="radio" name="danger" value="yes"> Yes
              </label>
              <label class="sbs">
-                <input type="radio" name="danger" value="maybe">Maybe
+                <input type="radio" name="danger" value="maybe"> Maybe
              </label>
              <label class="sbs">
-                <input type="radio" name="danger" value="no">No
+                <input type="radio" name="danger" value="no"> No
              </label>
-             <label class="top">Additional Information or Comments<input type="textarea" name="info"></label>
+             <label class="top">Additional Information or Comments<input type="textarea" name="info" id="text"></label>
         </fieldset>
         <input type="submit" value="Report Storm" class="submitBtn">
     </form>
@@ -104,7 +105,7 @@
 
    
    
-
+</div>
  
 
 
