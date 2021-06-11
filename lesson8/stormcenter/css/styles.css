@@ -489,7 +489,11 @@ h4{
     margin: .5rem 0;
 }
 
-.thankYou{
+.thankYou {
+    padding-bottom:2rem;
+}
+
+/*.thankYou{
     margin: 2rem 0;
     border: 3px solid #0B1D51;
     border-radius: 10px;
@@ -498,4 +502,4 @@ h4{
     font-size: 1.5rem;
     padding-bottom: 10px;
     max-width: 95%;
-}
+}*/
