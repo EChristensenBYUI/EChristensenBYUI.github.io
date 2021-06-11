@@ -24,6 +24,8 @@
     main.storm {
         background-image: url("/lesson8/stormcenter/images/stormbackground-min.jpg");
         background-size: 100%;
+        background-repeat: no-repeat;
+        background-color: #000;
         width: 100% !important;
         max-width: none;
         margin-top:-2rem;
@@ -50,11 +52,16 @@
 
     .formcontainer {
         margin: 0 auto;
-        max-width: 400px;
+        max-width: 600px;
     }
+    input{
+        width:80%;
+        max-width: none;
+    }
+
 }
     
-}
+
 
 
 

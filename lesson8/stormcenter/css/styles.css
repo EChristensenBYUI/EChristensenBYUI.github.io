@@ -361,6 +361,12 @@ footer a {
 form {
     margin: 0 auto;
     display: block;
+
+}
+
+.formcontainer {
+    margin: 0 auto;
+    max-width: 300px;
 }
 
 form fieldset{
@@ -370,7 +376,7 @@ form fieldset{
     padding: 2%;
     font-family: 'Poppins', sans-serif;
     font-size: 1.5rem;
-    width: 350px;
+    padding-bottom: 10px;
     max-width: 95%;
 }
 
@@ -390,7 +396,7 @@ form label.top, form div {
 }
 
 form label.top input, form label.top select {
-    -webkit-appearance: none; /*webkit overrides some automatic styling of safari and chrome*/
+    /*-webkit-appearance: none; webkit overrides some automatic styling of safari and chrome*/
     display: block;
     font-size: 1rem;
     border: solid 1px #999;
@@ -398,7 +404,7 @@ form label.top input, form label.top select {
     padding: .75rem;
     color: #555;
     width: 100%;
-    max-width: 20rem;
+
     background-color: rgba(0,0,0,0.1);
 }
 
@@ -454,9 +460,10 @@ select {
     width: 100%;
 }
 
-#text {
+textarea {
     height: 10rem;
     margin-bottom: 1rem;
+    width: 100%;
 }
 
 input[type="radio"] {
