@@ -29,6 +29,7 @@
         width: 100% !important;
         max-width: none;
         margin-top:-2rem;
+        padding-bottom:2rem;
     }
     
    /* main.storm {
@@ -45,6 +46,24 @@
         color: white;
         padding-top:2rem;
     }
+
+    p.storm {
+        color: white;
+        background-color: rgba(0,0,0, 0.7);
+        padding: 1rem .5rem;
+        border-radius: 10px;
+        max-width: 400px;
+        margin-left: 0;
+    }
+
+    .thankYou {
+        
+        max-width: 400px;
+        margin: 0 auto;
+        display: block;
+        border-radius: 10px;
+    }
+
 
     form legend {
         padding-top: 3rem;

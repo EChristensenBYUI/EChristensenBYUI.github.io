@@ -42,67 +42,11 @@
         </ul>
     </nav>
     <main class="storm">
-        <div class="formcontainer">
+        <div class="thankYou">
 
-    <h1 class="storm">Storm Center</h1>
-    <p class="storm">Is there some sever weather that needs to be reported? Please fill out the form below.</p>
-    <form method="get" action="thanks.html">
-        <fieldset>
-            <h4>Contact Information</h4>
-            <label class="top">First and Last Name <input type="text" name="name" pattern="[A-Za-z. -]{5,}" required></label>
-
-            <label class="top">
-                Email <input type="email" name="email" placeholder="myemail@email.com">
-            </label>
-
-            <label class="top">Phone number <input type="tel" name="phone" required></label>
-
-            <label class="top">
-                Zip Code <input type="number" name="zip" required> <!--type "number" makes arrows appear? can we hide it in css?-->
-            </label>
-        </fieldset>
-        <fieldset>
-            <h4>Weather Occurance Information </h4>
-            <label class="top">Date of Weather Occurance <input type="date" name="date"></label>
-            <label class="top">Type of Weather Occurance <input list="stormTypes" placeholder="Please Select Storm Type" name="stormType">
-                <datalist id="stormTypes">
-
-                    <option value="Flash Flood"></option>
-                    <option value="Hail"></option>
-                    <option value="Hurricane"></option>
-                    <option value="Thunderstorm"></option>
-                    <option value="Tornado"></option>
-                    
-                </datalist>
-             </label>
-             <label class="flexly"
-                for="rating">Severity of Storm (1 -10) &nbsp;&nbsp;&nbsp; <input type="range" name="severity" min="1" max="10" value="5" id="rating" list="tickmarks"
-                oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"> <span id="ratingvalue">5</span>
-             </label>
-
-             <label class="top">Storm Region 
-                 <select name="region">
-                     <option value="">Select Region </option>
-                     <option value="preston">Preston</option>
-                     <option value="sodaSprings">Soda Springs</option>
-                     <option value="fishHaven">Fish Haven</option>
-                 </select>
-             </label>
-             <div>Are you in danger?</div>
-             <label class="sbs">
-                <input type="radio" name="danger" value="yes"> Yes
-             </label>
-             <label class="sbs">
-                <input type="radio" name="danger" value="maybe"> Maybe
-             </label>
-             <label class="sbs">
-                <input type="radio" name="danger" value="no"> No
-             </label>
-             <label class="top">Additional Information or Comments<textarea name="comment"></textarea></label>
-        </fieldset>
-        <input type="submit" value="Report Storm" class="submitBtn">
-    </form>
-
+    <h1 class="storm">Thank You!</h1>
+    <p class="storm">Thank you for alerting us of severe weather! We will alert the authorities, stay safe!</p>
+   
 
    
    
