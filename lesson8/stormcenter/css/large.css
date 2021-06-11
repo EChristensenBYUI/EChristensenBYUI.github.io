@@ -19,6 +19,40 @@
         display: block;
         flex: 1 1 auto;
     } 
+
+    
+    main.storm {
+        background-image: url("/lesson8/stormcenter/images/stormbackground-min.jpg");
+        background-size: 100%;
+        width: 100% !important;
+        max-width: none;
+        margin-top:-2rem;
+    }
+    
+   /* main.storm {
+        background-color: rgba(255,255,255,0.5);
+        border-radius:10px;
+    
+    } */
+
+    form fieldset{
+        background-color: rgba(255,255,255,0.8);
+    }
+
+    h1.storm{
+        color: white;
+        padding-top:2rem;
+    }
+
+    form legend {
+        padding-top: 3rem;
+    }
+
+    .formcontainer {
+        margin: 0 auto;
+        max-width: 400px;
+    }
+}
     
 }
 
@@ -26,6 +60,10 @@
 
 @media screen and (min-width: 60em){
 
+
+    .formcontainer{
+        max-width: 700px;
+    }
     nav ul { display: flex; }
     nav ul li { flex: 1 1 100%; }
 

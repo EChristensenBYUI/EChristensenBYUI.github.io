@@ -365,7 +365,7 @@ form {
 
 form fieldset{
     margin: 2rem 0;
-    border: 1px solid #0B1D51;
+    border: 3px solid #0B1D51;
     border-radius: 10px;
     padding: 2%;
     font-family: 'Poppins', sans-serif;
