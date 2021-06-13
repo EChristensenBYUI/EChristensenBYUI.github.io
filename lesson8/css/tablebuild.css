@@ -16,14 +16,7 @@ table, th, td, caption {
     padding: .5rem 0;
 }
 
-caption {
-    background-color: #7FB9C2;
-    color: black;
 
-    font-size: 2rem;
-
-    margin-bottom: -2px;
-}
 
 th {
     background-color: #628CA6;
@@ -49,7 +42,16 @@ tr:nth-child(even) {
     background-color: #628CA6;
     color: white;
 }
-tr:nth-last-child(1) {
+tfoot td{
     background-color:  #7FB9C2;
-    font-size: .5em;
+
+}
+
+thead td{
+    background-color: #7FB9C2;
+    color: black;
+
+    font-size: 2rem;
+
+    margin-bottom: -2px;
 }
