@@ -27,9 +27,10 @@ img {
     box-shadow: 0px 0px 8px;
 }
 
-birthdate, birthplace {
+p {
     display: block;
     text-align: center;
+    margin: 0;
 }
 
 @media only screen and (min-width: 420px) {

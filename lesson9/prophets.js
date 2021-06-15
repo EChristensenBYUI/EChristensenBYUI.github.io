@@ -14,13 +14,14 @@ fetch(requestURL)
 
     let card = document.createElement('section');
     let h2 = document.createElement('h2');
-    let birthdate = document.createElement('birthdate');
-    let birthplace = document.createElement('birthplace');
-    //let birthinfo = document.createElement('birthinfo');
+    let birthdate = document.createElement('p');
+    let birthplace = document.createElement('p');
+
     let img = document.createElement('img');
 
     h2.textContent = prophets[i].name + ' ' + prophets[i].lastname;
-   // birthinfo.textContent = 'Date of Birth: ' + prophets[i].birthdate + 'Birthplace: ' + prophets[i].birthplace;
+
+ 
      birthdate.textContent = 'Date of Birth: ' + prophets[i].birthdate ;
     birthplace.textContent =  'Place of Birth: ' + prophets[i].birthplace;
     img.setAttribute('src', prophets[i].imageurl);
@@ -37,6 +38,8 @@ fetch(requestURL)
     card.appendChild(img);
 
     document.querySelector('div.cards').appendChild(card);
+
+ 
 
 }
 
