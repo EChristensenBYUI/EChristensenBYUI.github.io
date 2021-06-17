@@ -124,5 +124,15 @@
         transition: .2s;
     }
 
+    .homecards {
+        display: flex;
+    }
+
+    .carditem {
+        display: flex;
+        flex-direction:column;
+        margin: 0 .5rem;
+    }
+
 
 }

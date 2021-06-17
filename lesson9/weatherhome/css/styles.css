@@ -79,6 +79,11 @@ h1 {
 
 }
 
+main h1 {
+    margin-top: .2rem;
+    margin-bottom: 0;
+}
+
 p {
     font-family: 'Roboto', sans-serif;
     margin-left: 20px;
@@ -493,13 +498,40 @@ h4{
     padding-bottom:2rem;
 }
 
-/*.thankYou{
-    margin: 2rem 0;
-    border: 3px solid #0B1D51;
-    border-radius: 10px;
-    padding: 2%;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.5rem;
-    padding-bottom: 10px;
-    max-width: 95%;
-}*/
+/*************HOME*************/
+
+.carditem {
+    border: 5px solid #0b1d51;
+    width: 95%;
+    margin: .5em auto;
+    max-width: 320px;
+}
+
+.carditem img {
+    width: 100%;
+}
+
+.carditem h2 {
+    color: white;
+    background-color:#214E34;
+    margin: -5px 0 0 0;
+    text-align: center;
+    padding: .5rem 0;
+    border-top: 5px solid #0b1d51;
+    border-bottom: 5px solid #0b1d51;
+}
+
+.carditem h3 {
+    margin: .2rem 0;
+    text-align: center;
+    color: #0b1d51;
+}
+
+.carditem p {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.grid2{
+    background-color: white;
+}
