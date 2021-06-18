@@ -28,12 +28,12 @@ fetch(requestURL)
             let currentPopulation = document.createElement('p');
             let averageRainfall = document.createElement('p');
 
-            h2.innerHTML = towns[i].name;
+            h2.textContent = towns[i].name;
             h3.textContent = towns[i].motto;
 
             yearFounded.textContent = 'Year Founded: ' + towns[i].yearFounded;
             currentPopulation.textContent = 'Current Population: ' + towns[i].currentPopulation;
-            averageRainfall = 'Avg Rainfall: ' + towns[i].averageRainfall;
+            averageRainfall.textContent = 'Avg Rainfall: ' + towns[i].averageRainfall;
 
             card.appendChild(h2);
             card.appendChild(h3);
