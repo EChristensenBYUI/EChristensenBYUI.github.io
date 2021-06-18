@@ -38,13 +38,13 @@ fetch(requestURL)
             card.appendChild(currentPopulation);
             card.appendChild(averageRainfall);
 
-          /* if (towns[i].name == 'Soda Springs') {
+          if (towns[i].name == 'Soda Springs') {
                 document.querySelector('#soda').appendChild(card);
-            } */
+           } 
 
         }
 
 
 
 
-  });
+  }});
