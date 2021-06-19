@@ -525,13 +525,34 @@ h4{
     margin: .2rem 0;
     text-align: center;
     color: #0b1d51;
+    font-weight: 100;
 }
 
 .carditem p {
     text-align: center;
     font-size: 1.2rem;
+    margin: 10px;
 }
 
 .grid2{
     background-color: white;
+    height: 100%;
+}
+
+.homeimg img {
+    border: 5px solid #0b1d51;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.events {
+    margin: 1.5rem auto;
+    width: 80%;
+}
+
+.events img {
+    max-width: 300px;
+    border: 5px solid #0b1d51;
+    margin: 1rem auto;
+    display: block;
 }

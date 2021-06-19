@@ -160,7 +160,15 @@
         grid-row: 1;
     }
 
+    .events img {
+        float: left;
+        margin-right: 1.5rem;
+    }
 
+    .events {
+        width: 95%;
+        max-width: 600px;
+    }
 
 
 
