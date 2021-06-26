@@ -232,6 +232,13 @@ nav a:hover {
 
 }
 
+.articlebox h2 {
+    color: white;
+    background-color: #0b1d51;
+    padding: 10px;
+    margin-left: 0;
+}
+
 .articlebox h3 {
     margin-top: 0;
     padding-top: 10px;
@@ -241,6 +248,7 @@ nav a:hover {
     margin: 0 auto;
     display: block;
     border: 5px solid #0b1d51;
+    max-width: 300px;
 }
 
 .color {
