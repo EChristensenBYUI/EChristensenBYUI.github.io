@@ -225,12 +225,22 @@ nav a:hover {
 
 }
 
-.eventbox h3 {
+.eventboxSoda {
+    background-color:#0b1d51;
+    color: white;
+    padding-top: 2px;
+    padding-bottom: 10px;
+    margin: 1em auto;
+    outline: 2px solid white;
+    outline-offset: -7px;
+}
+
+.eventbox, .eventboxSoda h3 {
     color: white;
     text-align: center;
 }
 
-.eventbox p {
+.eventbox, .eventboxSoda p {
     text-align: center;
     
 }
@@ -421,7 +431,7 @@ footer a {
 .events img {
     max-width: 300px;
     border: 5px solid #0b1d51;
-    margin: 1rem auto;
+    margin: 0 auto 1rem auto;
     display: block;
 }
 

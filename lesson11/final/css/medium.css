@@ -48,7 +48,22 @@
     }
 
     
+    .eventflex {
+        display: flex;
+    }
 
+    .eventflex p {
+        background-color: white;
+        color:#0b1d51;
+        padding: 7px;
+       margin-top: -10px;
+       outline: 2px solid #0b1d51;
+       outline-offset: -3px;
+    }
+
+    .eventboxSoda {
+        margin-top: -27px;
+    }
 
 
   .topimg img{
@@ -126,7 +141,7 @@
     .articlebox img {
         max-width: 300px;
         width: 30%;
-        margin: -2rem 1rem 1rem 1rem;
+        margin: 1rem;
         float: right;
     }
 
