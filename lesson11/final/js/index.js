@@ -114,22 +114,17 @@ let thedate = new Date();
 
           console.log(fiveDayForecast);
 // loop through each day
-          fiveDayForecast.forEach( x => {
-              let d = new Date(x.dt_txt);
-              console.log(d);
-              document.getElementById(`dayofweek${day+1}`).textContent = dayofWeek[d.getDay()];
-              document.getElementById(`forecast${day+1}`).textContent = x.main.temp.toFixed(0);
+      fiveDayForecast.forEach( x => {
+      let d = new Date(x.dt_txt);
+      console.log(d);
+      document.getElementById(`dayofweek${day+1}`).textContent = dayofWeek[d.getDay()];
+      document.getElementById(`forecast${day+1}`).textContent = x.main.temp.toFixed(0);
+      const image = 'http://openweathermap.org/img/wn/' + x.weather[0].icon + '@2x.png';
+      const desc = x.weather[0].description;
+      document.getElementById(`icon${day+1}`).setAttribute('src', image);
+      document.getElementById(`icon${day+1}`).setAttribute('alt', desc);
+      day++;
+    });
 
-              const image = 'http://openweathermap.org/img/wn/' + x.weather[0].icon + '@2x.png';
-              const desc = x.weather[0].description;
-
-              document.getElementById(`icon${day+1}`).setAttribute('src', image);
-              document.getElementById(`alt${day+1}`).setAttribute('alt', desc);
-
-
-              day++;
-          });
-
-        });
-
+});
         //try to do 'querySelector' instead of getElementbyID
