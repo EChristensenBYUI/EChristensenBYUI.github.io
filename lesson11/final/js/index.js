@@ -119,61 +119,17 @@ let thedate = new Date();
               console.log(d);
               document.getElementById(`dayofweek${day+1}`).textContent = dayofWeek[d.getDay()];
               document.getElementById(`forecast${day+1}`).textContent = x.main.temp.toFixed(0);
+
               const image = 'http://openweathermap.org/img/wn/' + x.weather[0].icon + '@2x.png';
               const desc = x.weather[0].description;
+
               document.getElementById(`icon${day+1}`).setAttribute('src', image);
-              document.getElementById(`icon${day+1}`).setAttribute('alt', desc);
+              document.getElementById(`alt${day+1}`).setAttribute('alt', desc);
+
+
               day++;
           });
 
         });
 
         //try to do 'querySelector' instead of getElementbyID
-
- //Lazy Load
-
- let imagesToLoad = document.querySelectorAll('img[data-src]');
-
- const loadImages = (image) => {
-   image.setAttribute('src', image.getAttribute('data-src'));
-   image.onload = () => {
-     image.removeAttribute('data-src');
-   };
- };
-
-//This part is almost like adding css
- const imgOptions = {
-   rootMargin: '0px 0px -300px 0px',
-   threshold: 3
- };
-//This part is making sure the IntersectionalObserver is a thing in that particular browser
- if('IntersectionalObserver' in window) {
-   const imgObserver = new IntersectionObserver(items => {
-     items.forEach(item => {
-       if (item.isIntersecting) {
-         loadImages(item.target); /*this means target the images*/
-         imgObserver.unobserve(item.target);
-       }
-     });
-
-   }, imgOptions);
-   imagesToLoad.forEach(img => {
-     imgObserver.observe(img);
-   })
-
- }
-
- //if IntersectionalObserver is not supported just load the images
- else {
-   imagesToLoad.forEach(img => {
-     loadImages(img);
-   }); 
- }
- 
-
-
-
-
-
-
-        
