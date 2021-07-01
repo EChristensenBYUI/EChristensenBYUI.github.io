@@ -16,9 +16,7 @@
     <title>Leaf on the Wind Weather</title>
 </head>
 <body>
-    <div class="banner">
-        <p>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</p>
-    </div>
+
     <header>
         <div class="hgroup">
             <div class="hitem1"><img src="images/coloricon.png" alt="leaf on the wind icon"></div>
@@ -33,8 +31,8 @@
         <ul class="navigation">
             <li><a class="ham" href="#">&#9776;</a></li>
             <li><a href="/lesson11/final/index.html"> Home</a></li>
-            <li class="active"><a href="/lesson11/final/preston.html">Preston</a></li>
-            <li><a href="/lesson11/final/sodasprings.html">Soda Springs</a></li>
+            <li ><a href="/lesson11/final/preston.html">Preston</a></li>
+            <li class="active"><a href="/lesson11/final/sodasprings.html">Soda Springs</a></li>
             <li><a href="/lesson11/final/fishhaven.html">Fish Haven</a></li>
             <li><a href="/lesson11/final/stormcenter.html">Storm Center</a></li>
             <li><a href="/lesson11/final/gallery.html">Gallery</a></li> 
@@ -43,15 +41,12 @@
     </nav>
     <main>
 
-    <h2>Preston, Idaho</h2>
+    <h2>Soda Springs, Idaho</h2>
         <div class="topimg">
             <picture>
-                <source media="(min-width: 700px)" srcset="images/hero1-min.jpg">
-                <source media="(min-width: 421px)" srcset="images/hero1_520px.jpg.png">  
-                <source media="(max-width: 420px)" srcset="images/hero1_420px.png">
-                <img src="images/hero1-min.jpg" alt="small town">
+                <img src="images/sodasprings_hero-min.jpg" alt="Soda Springs Landscape">
               </picture>
-        <div class="weatherbox"><h3>Weather Summary</h3>
+        <div class="weatherboxSoda"><h3>Weather Summary</h3>
         <p><strong>Currently: </strong><span id="current"></span></p>
         <p><strong>Current Temp: </strong><span id="temp"></span>&deg;F</p>
         <p><strong>Wind Chill:</strong> <span id="windOutput"></span></p>
@@ -132,7 +127,7 @@
     <p>Current Date: <span id="currentyear"></span></p>
     <p>&#169; <span id="year"></span> | Elise Christensen | Nevada | <a href="https://www.byui.edu/online">BYUI Online Learning</a> | <a href="../../index.html">Assignment Portal</a></p>
     <p>Last Modified: <span id="lastmod"></span></p>
-    <p>Weather Information Attribution: <a href="Openweathermap.org" target="_blank">Openweathermap.org</a></p>
+    <p>Weather Information Attribution: <a href="https://Openweathermap.org" target="_blank">Openweathermap.org</a></p>
   </footer>
   <script src="js/index.js"></script> 
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
@@ -147,7 +142,7 @@
   }
 });
 </script>
-<script src="js/prestonweatherapi.js"></script>
+<script src="js/sodaspringsweather.js"></script>
 
 </body>
 

@@ -205,21 +205,34 @@ nav a:hover {
     border:3px solid #0b1d51;
     position: absolute;
 
-    margin-left: 30px;
+    margin-left: 30px!important;
 
 }
 
-.weatherbox h3 {
+
+.weatherbox, .weatherboxSoda h3 {
     color: white;
     margin: .5em;
 }
 
-.weatherbox p {
+.weatherbox, .weatherboxSoda p {
     line-height: 10px;
 
     color: white;
 }
 
+
+.weatherboxSoda {
+    display: block;
+    max-width: 300px;
+    z-index: 500;
+    background-color: #0b1d51cc;
+    border:3px solid white;
+    position: absolute;
+
+    right: 5%;
+
+}
 
 
 .forecastboxes, .forecast{

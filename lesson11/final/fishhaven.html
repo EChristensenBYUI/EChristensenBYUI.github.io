@@ -30,72 +30,82 @@
     <nav>
         <ul class="navigation">
             <li><a class="ham" href="#">&#9776;</a></li>
-            <li class="active"><a href="/lesson11/final/index.html"> Home</a></li>
+            <li><a href="/lesson11/final/index.html"> Home</a></li>
             <li><a href="/lesson11/final/preston.html">Preston</a></li>
             <li><a href="/lesson11/final/sodasprings.html">Soda Springs</a></li>
-            <li><a href="/lesson11/final/fishhaven.html">Fish Haven</a></li>
+            <li class="active"><a href="/lesson11/final/fishhaven.html">Fish Haven</a></li>
             <li><a href="/lesson11/final/stormcenter.html">Storm Center</a></li>
             <li><a href="/lesson11/final/gallery.html">Gallery</a></li> 
 
         </ul>
     </nav>
     <main>
-        <div class="homeimg">
-            <img src="images/heroimage_home-min.png" alt="purple sunset">
-        </div>
-<h1 class="homeh1">Welcome</h1>
-        <p>Welcome to idaho! In this scenic valley there are three major towns: Preston, Soda Springs, and Fish Haven. On this site you will find important information about the expected weather and events of the area. We also have a special gallery of photos. Feel free to click around and learn more about this historic region!</p>
 
-        <div class="homecards">
-            <div class="carditem">
+    <h2>Fish Haven, Idaho</h2>
+        <div class="topimg">
+            <picture>
+                <img src="images/fishhaven-min.png" alt="town of fish haven">
+              </picture>
+        <div class="weatherbox"><h3>Weather Summary</h3>
+        <p><strong>Currently: </strong><span id="current"></span></p>
+        <p><strong>Current Temp: </strong><span id="temp"></span>&deg;F</p>
+        <p><strong>Wind Chill:</strong> <span id="windOutput"></span></p>
+        <p><strong>Humidity: </strong><span id="humid"></span></p>
+        <p><strong>Wind Speed: </strong><span id="speed"></span>mph</p>
+    </div></div>
 
-                    <img src="images/PrestonCard-min.png" alt="Preston Image">
-                
-                <div class="grid2">
-                    <div id="preston"></div>
+        <div class="forecast">
+            <h3>Five Day Forecast</h3>
+            <div class="forecastDiv"></div>
+            <div class="forecastboxes">
+                <div class="boxitem">
+                    <h4><span id="dayofweek1"></span> </h4>
+                 
+                   <img id = "icon1">
+                    <p><span id="forecast1"></span></p>
                 </div>
-              
-
-            </div>
-
-            <div class="carditem">
-
-                <img src="images/SodaSpringsCard-min.png" alt="Soda Springs Image">
+                <div class="boxitem">
+                    <h4><span id="dayofweek2"></span> </h4>
             
-            <div class="grid2">
-                <div id="soda"></div>
+                    <img id="icon2">
+                    <p><span id="forecast2"></span></p>
+                </div>
+                <div class="boxitem">
+                    <h4><span id="dayofweek3"></span></h4>
+       
+                    <img id="icon3">
+                    <p><span id="forecast3"></span></p>
+                </div>
+                <div class="boxitem">
+                    <h4><span id="dayofweek4"></span> </h4>
+       
+                    <img id="icon4">
+                    <p><span id="forecast4"></span></p>
+                </div>
+                <div class="boxitem">
+                    <h4><span id="dayofweek5"></span></h4>
+                 
+                    <img id="icon5">
+                    <p><span id="forecast5"></span></p>
+                </div>
 
             </div>
-          
+        </div>
+        <div class="articlebox">
+            <h2>What's Happening?</h2>
+            <h3>Elks honor Flag Day ceremony</h3>
+            <img src="images/article_flagday_preston.png" alt="Flag Day ceremony">
+            <p>The Preston Elks Lodge honored the American Flag with a ceremony on June 14 in front of the county courthouse. </p>
+            <p>
+                "We hold our flag, our veterans and our United States close to our hearts," said Josh Anderson, president of the lodge. The ceremony included a history of the flag from its birth to what it is now and why new stars and new stripes were added, he said.  
+            </p>
+            <p>
+                Preston Mayor Dan Keller thanked the lodge and local youth who helped to put flags up in the city for the day.
+            </p>
+            <p>Original article appears on <a href="https://www.hjnews.com/preston/elks-honor-flag-day-ceremony/article_2bf840b3-4340-545d-af43-d3eb0dd8c810.html">hjnews.com</a></p>
+            <div class="clearfix"></div>
 
         </div>
-
-        <div class="carditem">
-
-            <img src="images/FishHavenCard-min.png" alt="Fish Haven Image">
-        
-        <div class="grid2">
-            <div id="fish"></div>
-        </div>
-      
-
-    </div>
-        </div>
-    
-    
-  <script src="js/townitems.js"></script>
-    
-    
-
-    <div class="events">
-        <h1>Upcoming Regional Events</h1>
-        <img src="images/article_balloons.png" alt="balloons">
-        <p>Upcoming July 15 - Regional Hot Air Balloon Festival</p>
-        <p><a href="#">Event Details</a></p>
-        <div class="clearfix"></div>
-    </div>  
-
-
 </main>
 
 <footer>
@@ -117,8 +127,9 @@
     <p>Current Date: <span id="currentyear"></span></p>
     <p>&#169; <span id="year"></span> | Elise Christensen | Nevada | <a href="https://www.byui.edu/online">BYUI Online Learning</a> | <a href="../../index.html">Assignment Portal</a></p>
     <p>Last Modified: <span id="lastmod"></span></p>
+    <p>Weather Information Attribution: <a href="Openweathermap.org" target="_blank">Openweathermap.org</a></p>
   </footer>
-  <script src="js/index.js" defer></script> 
+  <script src="js/index.js"></script> 
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 <script>
   WebFont.load({
@@ -131,6 +142,7 @@
   }
 });
 </script>
+<script src="js/fishhavenweather.js"></script>
 
 </body>
 
