@@ -26,4 +26,4 @@
 
               document.querySelector('div.forecastDiv').appendChild(forecastBox);
             
-          }};
+          }});

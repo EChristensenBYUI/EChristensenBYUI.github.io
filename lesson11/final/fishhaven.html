@@ -41,12 +41,23 @@
     </nav>
     <main>
 
-    <h2>Fish Haven, Idaho</h2>
+
+    <h2 class="toptown">Fish Haven, Idaho</h2>
+
+
         <div class="topimg">
+
+            <div class="eventbox">
+                <h3>Upcoming Events</h3>
+                <div id="events"></div>
+        
+            </div>
+
             <picture>
                 <img src="images/fishhaven-min.png" alt="town of fish haven">
               </picture>
-        <div class="weatherbox"><h3>Weather Summary</h3>
+        
+              <div class="weatherbox"><h3>Weather Summary</h3>
         <p><strong>Currently: </strong><span id="current"></span></p>
         <p><strong>Current Temp: </strong><span id="temp"></span>&deg;F</p>
         <p><strong>Wind Chill:</strong> <span id="windOutput"></span></p>
@@ -54,8 +65,10 @@
         <p><strong>Wind Speed: </strong><span id="speed"></span>mph</p>
     </div></div>
 
+        
+
         <div class="forecast">
-            <h3>Five Day Forecast</h3>
+            <h2>Five Day Forecast</h2>
             <div class="forecastDiv"></div>
             <div class="forecastboxes">
                 <div class="boxitem">
@@ -91,8 +104,10 @@
 
             </div>
         </div>
+
+
         <div class="articlebox">
-            <h2>What's Happening?</h2>
+            <h2>What's Been Happening?</h2>
             <h3>Elks honor Flag Day ceremony</h3>
             <img src="images/article_flagday_preston.png" alt="Flag Day ceremony">
             <p>The Preston Elks Lodge honored the American Flag with a ceremony on June 14 in front of the county courthouse. </p>
@@ -143,6 +158,7 @@
 });
 </script>
 <script src="js/fishhavenweather.js"></script>
+<script src="js/newattemptweather.js"></script>
 
 </body>
 

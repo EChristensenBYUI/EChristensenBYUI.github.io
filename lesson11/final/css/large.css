@@ -76,7 +76,18 @@
         max-width: none;
     }
 
+    .eventbox {
+        position: absolute;
+        right: 10px;
+        z-index: 500;
+        top: -90px;
+        left: 50%;
+    }
 
+    
+    h2.toptown {
+        margin-bottom: 0;
+    }
 
     
 }
@@ -143,6 +154,7 @@
         border-radius: 10px;
         margin: 1.5em auto;
     }
+
 
 
 

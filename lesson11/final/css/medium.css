@@ -48,7 +48,7 @@
     }
 
     
-    
+
 
 
   .topimg img{
@@ -75,6 +75,16 @@
         max-width: 100px;
         width: 20%;
         margin: 10px;
+    }
+
+    .forecast h2 {
+        text-align: left;
+        margin: 0;
+        padding: 5px 5px 5px 22px;
+        background-color: white;
+        color:#0b1d51;
+        border-bottom: 5px solid #0b1d51;
+
     }
 
     .boxitem {

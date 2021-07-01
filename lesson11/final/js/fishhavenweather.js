@@ -53,3 +53,35 @@ fetch(apiURL)
       });
 
     });
+
+
+    //Fish Haven Page - JSON reference - Events
+
+const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+
+fetch(requestURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+
+    console.table(jsonObject);  // temporary checking for valid response and data parsing
+
+    const towns = jsonObject['towns'];
+
+    let card = document.createElement('div');
+    let events = document.createElement('p');
+    let events2 = document.createElement('p');
+    let events3 = document.createElement('p');
+
+    events.textContent = towns[2].events[0];
+    events2.textContent = towns[2].events[1];
+    events3.textContent = towns[2].events[2];
+
+    card.appendChild(events);
+    card.appendChild(events2);
+    card.appendChild(events3);
+
+    document.querySelector('#events').appendChild(card);
+
+  })
