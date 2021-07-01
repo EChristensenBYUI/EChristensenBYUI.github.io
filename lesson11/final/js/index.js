@@ -117,6 +117,30 @@ let thedate = new Date();
       fiveDayForecast.forEach( x => {
       let d = new Date(x.dt_txt);
       console.log(d);
+
+      // let card = document.createElement('section');
+      // let h4 = document.createElement('h4');
+
+
+
+      // let img = document.createElement('img');
+
+ 
+
+      // let forecast = document.createElement('p');
+
+      // h4.textContent = dayofWeek[d.getDay()];
+      // img.setAttribute('src', image);
+      // img.setAttribute('alt', desc);
+      // forecast.textContent = x.main.temp.toFixed(0);
+
+      // card.appendChild(h4);
+      // card.appendChild(img);
+      // card.appendChild(forecast);
+
+
+      //   document.querySelector('div.forecastboxes').appendChild(card);
+
       document.getElementById(`dayofweek${day+1}`).textContent = dayofWeek[d.getDay()];
       document.getElementById(`forecast${day+1}`).textContent = x.main.temp.toFixed(0);
       const image = 'http://openweathermap.org/img/wn/' + x.weather[0].icon + '@2x.png';
