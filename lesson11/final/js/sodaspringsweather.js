@@ -4,7 +4,7 @@ const apiURL="https://api.openweathermap.org/data/2.5/weather?id=5607916&appid=a
 fetch(apiURL) 
   .then((response) => response.json())
   .then((jsObject) => {
-    console.log(jsObject);
+    //console.log(jsObject);
 
     document.getElementById('temp').textContent = jsObject.main.temp.toFixed(0);
 
@@ -30,7 +30,7 @@ fetch(apiURL)
   fetch(apiURLforecast) 
     .then((response) => response.json())
     .then((jsObject) => {
-      console.log(jsObject);
+     // console.log(jsObject);
 
       let day = 0;
       const dayofWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
@@ -38,12 +38,12 @@ fetch(apiURL)
       //filter the json data to just one time a day
       const fiveDayForecast = jsObject.list.filter(forecast => forecast.dt_txt.includes('18:00:00'));
 
-      console.log(fiveDayForecast);
+     // console.log(fiveDayForecast);
 // loop through each day
       fiveDayForecast.forEach( x => {
           let d = new Date(x.dt_txt);
-          console.log(d);
-          document.getElementById(`dayofweek${day+1}`).textContent = dayofWeek[d.getDay()];
+         // console.log(d);
+          document.getElementById(`dayofweek${day+1}`).innerHTML = dayofWeek[d.getDay()];
           document.getElementById(`forecast${day+1}`).textContent = x.main.temp.toFixed(0) + '\u00B0' + 'F';
           const image = 'http://openweathermap.org/img/wn/' + x.weather[0].icon + '@2x.png';
           const desc = x.weather[0].description;
@@ -65,7 +65,7 @@ fetch(apiURL)
               })
               .then(function (jsonObject) {
             
-                console.table(jsonObject);  // temporary checking for valid response and data parsing
+               // console.table(jsonObject);  // temporary checking for valid response and data parsing
             
                 const towns = jsonObject['towns'];
             

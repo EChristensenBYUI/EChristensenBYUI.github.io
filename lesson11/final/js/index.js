@@ -44,7 +44,7 @@ let thedate = new Date();
 
  var tempF = document.querySelector('#temp').innerHTML;
  var speed = document.querySelector('#speed').innerHTML;
- console.log(tempF, speed);
+ //console.log(tempF, speed);
 
 
 
