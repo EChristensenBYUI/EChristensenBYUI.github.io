@@ -43,7 +43,7 @@ fetch(apiURL)
       fiveDayForecast.forEach( x => {
           let d = new Date(x.dt_txt);
          // console.log(d);
-          document.getElementById(`dayofweek${day+1}`).innerHTML = dayofWeek[d.getDay()];
+          document.getElementById(`dayofweek${day+1}`).textContent = dayofWeek[d.getDay()];
           document.getElementById(`forecast${day+1}`).textContent = x.main.temp.toFixed(0) + '\u00B0' + 'F';
           const image = 'http://openweathermap.org/img/wn/' + x.weather[0].icon + '@2x.png';
           const desc = x.weather[0].description;
