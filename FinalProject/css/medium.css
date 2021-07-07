@@ -1,0 +1,53 @@
+@media screen and (min-width: 32.5em){
+    
+    nav ul {
+        display: flex; 
+       }
+   nav ul li { 
+       flex: 1 1 100%; 
+   }
+
+   .navigation {
+       display: flex;
+   
+
+   }
+
+    .navigation li:first-child {
+       display: none;
+   }
+
+   .navigation li {
+       display: block;
+       flex: 1 1 auto;
+   } 
+
+   header {
+       flex-direction: row;
+       background-color: transparent;
+       margin-bottom: 10px;
+       justify-content: space-between;
+       gap: 10px;
+   }
+   .headerLeft {
+       width: 74%;
+       background-color: #0E0A4A;
+       padding-bottom: 10px;
+   }
+   .headerRight {
+       width: 25%;
+
+       background-color: #086375;
+       margin-top: 0px;
+       margin-right: 0px;
+   }
+
+   header img {
+       width: 25%;
+   }
+
+   header h2 {
+       margin-top: -15px;
+   }
+    
+}

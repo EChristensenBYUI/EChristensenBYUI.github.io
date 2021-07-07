@@ -1,0 +1,29 @@
+
+@media screen and (min-width: 45em){
+
+    body {
+        background-image: url('/FinalProject/images/background_tucson-min2.png');
+        width: 100%;
+        background-color: #25211e;
+    }
+
+    main {
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: transparent;
+    }
+    
+}
+
+
+
+
+@media screen and (min-width: 60em){
+
+
+
+
+
+
+
+}
