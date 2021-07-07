@@ -4,7 +4,11 @@
     body {
         background-image: url('/FinalProject/images/background_tucson-min2.png');
         width: 100%;
-        background-color: #25211e;
+        background-color: #000000;
+        max-width: 1566px;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        background-position: top center;
     }
 
     main {
