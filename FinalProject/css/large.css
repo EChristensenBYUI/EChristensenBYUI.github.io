@@ -1,18 +1,9 @@
 
 @media screen and (min-width: 45em){
 
-    body {
-        background-image: url('/FinalProject/images/background_tucson-min2.png');
-        width: 100%;
-        background-color: #000000;
-        max-width: 1566px;
-        background-repeat: no-repeat;
-        margin: 0 auto;
-        background-position: top center;
-    }
 
     main {
-        max-width: 800px;
+        max-width: 900px;
         margin: 0 auto;
         background-color: transparent;
     }
@@ -24,7 +15,27 @@
 
 @media screen and (min-width: 60em){
 
+    .maincontent {
+        display: flex;
+    }
 
+    section {
+        width: 70%;
+    }
+
+    aside {
+        width: 39%;
+        flex-wrap: wrap;
+    }
+
+    .events {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .eventsbox {
+        width: 90%;
+    }
 
 
 

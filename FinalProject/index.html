@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Pacifico&family=Zen+Loop:ital@0;1&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Lato:ital,wght@0,400;0,700;1,300;1,400&family=Pacifico&display=swap" rel="stylesheet">    
     <meta name="description" content="Elise Christensen's Chamber of Commerce - Tucson Assignment">
     <title>Tucson Chamber of Commerce Sample Site</title>
     <script src="js/index.js" defer></script>
@@ -21,11 +21,11 @@
 <header>
     <div class="headerLeft">
     <img src="images/roadrunnericon.png" alt="roadrunner icon" class="icon">
-    <h1>Tucson Arizona</h1>
+    <h1>Tucson, Arizona</h1>
     <h2> Chamber of Commerce</h2>
     </div>
     <div class="headerRight">
-        <h2>Current Weather:</h2>
+        <h3>Today's Weather:</h3>
         <p>
             <span id="temp">72deg, </span>
              <span id="desc">Sunny</span>
@@ -46,19 +46,87 @@
     </ul>
 </nav>
 
+<div class="homephotos">
+    <img src="images/homephoto_theater-min.png" alt="downtown movie theater">
+    <img src="images/homephoto_pizza-min.png" alt="pizza restaurant">
+    <img src="images/homephoto_butterflies-min.png" alt="butterfly mural">
+    <img src="images/homephoto_crescent-min.png" alt="crescent store sign">
+
+</div>
+
     <div class="maincontent">
-    <h1>Welcome!</h1>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, dolor necessitatibus quo aspernatur molestiae porro quasi qui corporis sint commodi velit maiores voluptates alias ullam fuga rerum? Voluptatibus necessitatibus iusto qui hic ipsum deserunt porro perspiciatis facilis numquam id delectus in, error laborum molestias explicabo corrupti, amet a consequuntur libero?</p>
+        <section>
 
-    <p class="button"><a href="#">Button Sample</a></p>
 
+        <h1>Welcome!</h1>
+        <p>Welcome to the Tucson, Arizona Chamber of Commerce! We hope through this website you will be able to find ways to connect with our unique community. We also hope to be able to assist in directing more business your way! Check our our directory to see the other local businesses that have joined.  Our advertisement area below changes every week, once you join you will be notified when it's your turn. Please feel free to explore what our site has to offer! </p>
+
+       
+
+        <div class="advertisements">
+            <div class="adbox">
+                <h2>Eegee's</h2>
+                <img src="images/eegees.png" alt="eegees ad">
+                <p><a href="https://eegees.com/">Craving something icy and sweet?</a></p>
+            </div>
+            <div class="adbox">
+                <h2>Bookman's</h2>
+                <img src="images/bookmans.png" alt="bookmans ad">
+                <p><a href="https://bookmans.com">Book Your Trade Appointment Today!</a></p>
+            </div>
+            <div class="adbox">
+                <h2>Titan Missile Museum</h2>
+                <img src="images/Titanmissile.png" alt="Titan Missile Museum">
+                <p><a href="https://titanmissilemuseum.org/">Schedule Your Tour Today!</a></p>
+            </div>
+
+        </div>
+        <p class="button"><a href="#">Join the Community!</a></p>
+
+      </section>
+      <aside>
+          <div class="events">
+              <h4>Upcoming Events</h4>
+              <p>Take a look at what's coming up!</p>
+              <div class="eventcontainer">
+
+                <div class="eventsbox">
+                    <p class="eventdate">5/21/21 - 9/6/21</p>
+                    <p>Tucson Botanical Garden: I'll Follow the Sun</p>
+                    <p><a href="https://www.visittucson.org/event/tucson-botanical-garden-ill-follow-sun">Event Details</a></p>
+                </div>
+
+              <div class="eventsbox">
+                  <p class="eventdate">7/6/21 - 11/30/21</p>
+                  <p>Ready to Launch: Arizona's Place in Space</p>
+                  <p><a href="https://www.visittucson.org/event/ready-launch-arizonas-place-space">Event Details</a></p>
+              </div>
+
+              <div class="eventsbox">
+                <p class="eventdate">7/6/21 - 12/31/21</p>
+                <p>All the Single Ladies: Women Pioneers of the American West</p>
+                <p><a href="https://www.visittucson.org/event/all-single-ladies-women-pioneers-american-west">Event Details</a></p>
+            </div>
+
+
+            </div>
+            <p>*Events obtained from <a href="https://www.visittucson.org/events/categories/events-calendar">visittucson.org</a></p>
+          </div>
+
+      </aside>
 
     </div>
+    <div class="forecast">
+        <p>Forecast Area</p>
+  </div>
 
     
 <footer>
-<p>Footer Area</p>
-<p><a href="/index.html">Assignment Portal</a></p>
+
+
+<p>&#169; <span id="year"></span> | Elise Christensen | Nevada | <a href="https://www.byui.edu/online">BYUI Online Learning</a> | <a href="/index.html">Assignment Portal</a></p>
+<p>Photo credits: Ashley Maxwell |  <a href="https://flyclipart.com/road-runner-icons-noun-project-roadrunner-png-244530">Road Runner Icon</a></p>
+<p>Last Modified: <span id="lastmod"></span></p>
 </footer>
 </main>
 </body>

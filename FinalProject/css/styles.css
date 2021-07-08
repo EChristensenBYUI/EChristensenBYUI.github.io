@@ -12,24 +12,27 @@ header img {
 }
 
 header h1 {
-    font-family: 'Pacifico', cursive;
+
     color: #FFFFFF!important;
 
 }
 
 header h2 {
     color: #FFFFFF;
-    font-family: 'Zen Loop', cursive;
+    font-family: 'Pacifico', cursive;
     text-align: center;
     font-size: 1.7em;
     margin: -10px;
 }
 
-.headerRight h2 {
+.headerRight h3 {
     color:#FFFFFF;
     margin: 10px;
     float: left;
     font-style: italic;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    text-align: center;
 }
 
 .headerRight p{
@@ -43,6 +46,10 @@ header h2 {
     width: 100%;
     padding-left: 15px;
 } 
+
+p {
+    font-family: 'Lato', sans-serif;
+}
 
 .navigation {
 	list-style: none;
@@ -115,11 +122,19 @@ nav a:hover {
     background-color: #086375;
 }
 
+.homephotos {
+    display: none;
+}
+
 .maincontent {
     background-color: #FAF0DB;
     padding-top: 1em;
     padding-bottom: 1em;
-  
+    margin-top: 10px;
+}
+
+.maincontent h1 {
+    margin-left: 15px;
 }
 
 main {
@@ -159,12 +174,82 @@ main p {
 footer{
     background-color: #0E0A4A;
     color: white;
+    padding: 15px 0;
+    margin-top: 15px;
 }
 
 footer p {
     color: white;
+    text-align: center;
 }
 
 footer a {
     color: white;
+}
+
+.forecast {
+    display: none;
+}
+
+h4 {
+    font-family: 'Pacifico', cursive;
+    
+}
+
+.eventsbox {
+
+    padding: 10px;
+    margin: 10px;
+}
+
+.events h4 {
+    color: #0E0A4A;
+    margin: .5em auto;
+    text-align: center;
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+
+.events p {
+    text-align: center;
+    margin: 5px;
+}
+
+.events {
+    border: dotted 7px #0E0A4A;
+}
+
+p.eventdate {
+    font-weight: bold;
+    background-color: #0E0A4A;
+    color:#FAF0DB;
+    padding: 10px;
+}
+
+.advertisements {
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.adbox {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    background-color: #fff;
+    border: 5px solid #086375;
+    margin-bottom: 10px;
+}
+
+.adbox h2 {
+    color:#086375;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+}
+
+.adbox img {
+    width: 90%;
+}
+
+.adbox a {
+    color:#086375;
 }
