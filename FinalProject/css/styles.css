@@ -28,6 +28,7 @@ header h2 {
 .headerRight h3 {
     color:#FFFFFF;
     margin: 10px;
+    margin-top: 13px;
     float: left;
     font-style: italic;
     font-family: 'Lato', sans-serif;
@@ -46,6 +47,10 @@ header h2 {
     width: 100%;
     padding-left: 15px;
 } 
+
+#humid {
+    display: none;
+}
 
 p {
     font-family: 'Lato', sans-serif;
@@ -248,8 +253,11 @@ p.eventdate {
 
 .adbox img {
     width: 90%;
+    margin: 0 auto;
+    display: block;
 }
 
 .adbox a {
     color:#086375;
+    text-decoration: none;;
 }

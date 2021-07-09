@@ -53,6 +53,24 @@
        margin-right: 0px;
    }
 
+   #temp {
+       font-size: 3em;
+       display: block;
+       text-align: center;
+       line-height: .8;
+ 
+       margin-bottom: 10px;
+   }
+
+   #desc, #humid {
+      
+       font-style: italic;
+       font-size: 1.2em;
+        text-align: center;
+        display: block;
+   }
+
+
    header img {
        width: 25%;
    }

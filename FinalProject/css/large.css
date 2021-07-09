@@ -7,6 +7,10 @@
         margin: 0 auto;
         background-color: transparent;
     }
+
+    #temp {
+        font-size: 3.5em;
+    }
     
 }
 
