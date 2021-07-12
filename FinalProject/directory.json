@@ -1,0 +1,55 @@
+
+{
+"directory":
+[
+    {"name":"Bookman's", 
+        "logourl":"images/logos/bookmans_logo.png",
+         "website":"https://bookmans.com/",
+         "phone":"(520) 748-9555"
+        }
+,
+    {
+        "name":"Eegee's",
+        "logourl":"images/logos/EEGEE_Primary_Logo.png",
+        "website":"https://eegees.com/",
+        "phone":"(520) 294-3333"
+        
+    },
+
+    {
+        "name":"Titan Missile Museum",
+        "logourl":"images/Titanmissile.png",
+        "website":"https://titanmissilemuseum.org/",
+        "phone":"(520) 625-7736"
+    },
+
+    {
+        "name":"Funtastics",
+        "logourl":"images/logos/funtastics_logo.png",
+        "website":"https://www.funtasticks.com/",
+        "phone":"(520)888-GOLF (4653) Ext. 6"
+    },
+
+    {
+        "name":"Trail Dust Town",
+        "logourl":"images/logos/traildusttown_logo.jpeg",
+        "website":"https://www.traildusttown.com/",
+        "phone":"(520) 296-4551"
+    },
+
+    {
+        "name":"Sonoran Desert Museum",
+        "logourl":"images/logos/desertmuseum_logo.png",
+        "website":"https://www.desertmuseum.org/",
+        "phone":"(520) 883-2702"
+    },
+
+    {
+        "name":"The Silver Saddle Steakhouse",
+        "logourl":"images/logos/silversaddle_logo.png",
+        "website":"https://thesilversaddlesteakhouse.com/",
+        "phone":"(520) 622-6253"
+    }
+
+]
+}

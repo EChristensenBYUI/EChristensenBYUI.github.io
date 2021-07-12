@@ -165,4 +165,29 @@
     transform: scale(1.08);
     transition: .2s;
    }
+
+   .Dcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.Ditem img {
+    display: block;
+    max-width: 180px;
+    margin: 0 auto;
+    
+}
+
+
+.Ditem img:hover {
+    transform: scale(1.08);
+    transition: .2s;
+}
+
+p.website {
+    display: none;
+}
+
+
+
 }

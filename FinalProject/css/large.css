@@ -41,8 +41,13 @@
         width: 90%;
     }
 
+    .Dcontainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .Ditem {
 
-
+    }
 
 
 }

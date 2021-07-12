@@ -26,6 +26,10 @@ header h1 {
 
 }
 
+h2 {
+    font-family: 'Pacifico', cursive;
+}
+
 header h2 {
     color: #FFFFFF;
     font-family: 'Pacifico', cursive;
@@ -270,4 +274,28 @@ p.eventdate {
 .adbox a {
     color:#086375;
     text-decoration: none;;
+}
+
+.Dcontainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+
+.Ditem {
+    display: grid;
+    justify-content: center;
+    background-color: white;
+    border: 5px solid #0E0A4A;
+    margin: 1em;
+    box-shadow: 5px 5px 10px;
+}
+
+.Ditem p, h2 {
+    text-align: center;
+    
+}
+
+.Ditem img {
+    display: none;
 }
