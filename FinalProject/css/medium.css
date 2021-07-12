@@ -42,15 +42,29 @@
    }
    .headerLeft {
        width: 74%;
-       background-color: #0E0A4A;
-       padding-bottom: 10px;
-   }
+       background-image: linear-gradient(#FAF0DB, #A28F80);
+     
+       border: 5px solid #0E0A4A;
+    }
+
+    .headerLeft h1, h2{
+        color: #0E0A4A!important;
+
+    }
+  
    .headerRight {
        width: 25%;
 
        background-color: #086375;
        margin-top: 0px;
        margin-right: 0px;
+   }
+
+   img.icon {
+       display: block;
+   }
+   img.icon_mobile {
+       display: none;
    }
 
    #temp {

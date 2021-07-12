@@ -4,6 +4,15 @@ header {
     flex-direction: column;
 }
 
+img.icon {
+    display: none;
+}
+
+
+img.icon_mobile {
+    display: block;
+}
+
 header img {
     width: 30%;
     max-width: 194px;
@@ -144,6 +153,7 @@ nav a:hover {
 
 main {
     padding-top: 1em;
+ 
 }
 
 main h1 {
