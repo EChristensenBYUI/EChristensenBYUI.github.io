@@ -74,11 +74,6 @@ const grid = document.querySelector('.grid');
 
 
 
-  listview.forEach( x => {
-    document.querySelector('.website').style.display="block";
-  }
-  )
-
 
 gridview.addEventListener('click', () => {Ditem.classList.toggle('listviewItem')}, false);
 
