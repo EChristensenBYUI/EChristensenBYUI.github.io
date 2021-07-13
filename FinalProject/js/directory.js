@@ -69,6 +69,7 @@ const grid = document.querySelector('.grid');
 
   gridview.addEventListener('click', () => {
     grid.setAttribute('src', 'images/gridview.png')
+    grid.setAttribute('alt', 'grid view')
     
   }, false);
 
