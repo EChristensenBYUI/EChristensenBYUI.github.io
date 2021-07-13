@@ -68,7 +68,7 @@ const grid = document.querySelector('.grid');
   }, false);
 
   gridview.addEventListener('click', () => {
-    grid.setAttribute('src', '/images/gridview.png')
+    grid.setAttribute('src', 'images/gridview.png')
     
   }, false);
 
