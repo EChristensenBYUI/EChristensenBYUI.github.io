@@ -1,3 +1,9 @@
+
+
+
+
+
+
 const requestURL = '/FinalProject/directory.json';
 
 fetch(requestURL)
@@ -32,11 +38,12 @@ fetch(requestURL)
             website.setAttribute('class','website');
 
             card.appendChild(h2);
+            card.appendChild(link);
+            link.appendChild(website);
             card.appendChild(imglink);
             imglink.appendChild(img);
          
-            card.appendChild(link);
-            link.appendChild(website);
+           
             card.appendChild(phone);
 
             document.querySelector('div.Dcontainer').appendChild(card);
@@ -44,3 +51,38 @@ fetch(requestURL)
         }
 
   });
+
+  
+const gridview = document.querySelector('.gridview');
+const Dcontainer = document.querySelector('.Dcontainer');
+const Ditem = document.querySelector('.Ditem');
+const listview = document.querySelector('.listview');
+const Dbuttons = document.querySelector('.Dbuttons');
+const grid = document.querySelector('.grid');
+
+  gridview.addEventListener('click', () => {
+    
+    Dcontainer.classList.toggle('listview')
+    
+  
+  }, false);
+
+  gridview.addEventListener('click', () => {
+    grid.setAttribute('src', 'images/gridview.png')
+    
+  }, false);
+
+
+
+  listview.forEach( x => {
+    document.querySelector('.website').style.display="block";
+  }
+  )
+
+
+gridview.addEventListener('click', () => {Ditem.classList.toggle('listviewItem')}, false);
+
+//    List.forEach( x => {
+  //document.querySelector('.Ditem').style.display="flex";
+//});
+

@@ -10,6 +10,16 @@
         margin: 0 auto;
         background-position: top center;
     }
+
+    nav {
+        background-image: linear-gradient(#FAF0DB, #A28F80);
+        border-top: 5px solid #0E0A4A;
+        
+    }
+
+    nav ul li a {
+        color: #0E0A4A;
+    }
     
     nav ul {
         display: flex; 
@@ -28,10 +38,20 @@
        display: none;
    }
 
+   .navigation li:last-child {
+       border-right: 5px solid #0E0A4A;
+   }
+
    .navigation li {
        display: block;
        flex: 1 1 auto;
+       border-left: 5px solid #0E0A4A;
+       border-bottom: 5px solid #0E0A4A;
    } 
+
+   .active a {
+       color:#FAF0DB;
+   }
 
    header {
        flex-direction: row;
@@ -55,7 +75,7 @@
    .headerRight {
        width: 25%;
 
-       background-color: #086375;
+       background-color: #0E0A4A;
        margin-top: 0px;
        margin-right: 0px;
    }
@@ -107,6 +127,10 @@
    .homephotos img:hover {
        transform: scale(1.08);
        transition: .2s;
+   }
+
+   .maincontent {
+       border: 5px solid #0E0A4A;
    }
 
    .advertisements {
@@ -175,7 +199,7 @@
     display: block;
     max-width: 180px;
     margin: 0 auto;
-    
+    min-width: 0;
 }
 
 
@@ -184,10 +208,67 @@
     transition: .2s;
 }
 
-p.website {
+.Ditem {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 0;
+}
+
+.Ditem h2 {
+    width: 250px;
+}
+
+
+
+
+
+.Dbuttons {
+    display: block;
+    position: relative;
+    float: right;
+    margin-right: 15px;
+}
+
+.Dbuttons img {
+    max-width: 30px;
+    margin-right: 10px;
+}
+
+.Dbuttons img:hover {
+    transform: scale(1.08);
+    transition: .2s;
+}
+
+.listview {
+    display: flex!important;
+    flex-direction: column;
+}
+
+.listview img {
     display: none;
 }
 
+.listview .Ditem {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr auto;
+    padding-left: 10px;
+    align-items: center;
+}
+
+.listview .website {
+    display: block;
+}
+
+.listview .Ditem h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    text-align: left;
+    width: auto;
+}
+
+.listview .Ditem a {
+    justify-self: left;
+}
 
 
 }

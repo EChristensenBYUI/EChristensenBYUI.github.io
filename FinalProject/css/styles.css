@@ -39,7 +39,7 @@ header h2 {
 }
 
 .headerRight h3 {
-    color:#FFFFFF;
+    color:#FAF0DB;
     margin: 10px;
     margin-top: 13px;
     float: left;
@@ -50,10 +50,10 @@ header h2 {
 }
 
 .headerRight p{
-    color:#FFFFFF;
+    color:#FAF0DB;
 }
 .headerRight {
-    color: #FFFFFF;
+    color: #FAF0DB;
 
     background-color: #0E0A4A;
     margin-top: 10px;
@@ -132,8 +132,8 @@ nav ul li a {
 
 }
 nav a:hover {
-	background-color: #809BCE;
-	color: #0E0A4A;
+	background-color: #0E0A4A;
+	color:#FAF0DB;
 }
 
 .active {
@@ -297,5 +297,22 @@ p.eventdate {
 }
 
 .Ditem img {
+    margin: 0 auto;
+    width: 90%;
+    display: block;
+    max-width: 170px;
+}
+
+.Dbuttons {
+    display: none;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+p.website {
     display: none;
 }
