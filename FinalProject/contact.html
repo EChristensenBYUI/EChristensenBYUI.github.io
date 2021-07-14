@@ -45,9 +45,9 @@
         <li><a class="ham" href="#">&#9776;</a></li>
         <li ><a href="/FinalProject/index.html"> Home</a></li>
         <li><a href="#">Tucson</a></li>
-        <li class="active"><a href="/FinalProject/join.html">Join</a></li>
+        <li ><a href="/FinalProject/join.html">Join</a></li>
         <li><a href="/FinalProject/directory.html">Directory</a></li>
-        <li><a href="/FinalProject/contact.html">Contact</a></li>
+        <li class="active"><a href="/FinalProject/contact.html">Contact</a></li>
 
 
     </ul>
@@ -61,27 +61,17 @@
 
 </div>
 <div class="maincontent">
-    <aside style="margin-left: 15px;">
-        <h3>Check out our Membership Levels:</h3>
-        <h4>Non-Profit - $100</h4>
-        <p>If your business is classified as a non-profit we have a discounted fee. You must be recognized by the governemnt as non-profit and this membership includes all of the bronze member benefits.</p>
-        <h4>Bronze - $200</h4>
-        <p>Bronze members receive a directory listing, a badge to be displayed at business and/or on the business website, and advertising at events sponsored by the Chamber of Commerce.</p>
-        <h4>Silver - $400</h4>
-        <p>Silver members enjoy a directory listing, one free business training each year (with a directory to other recommended trainings), advertising at events sponsored by the Chamber of Commerce, and provided social media posts.</p>
-        <h4>Gold - $1000</h4>
-        <p>The Gold membership includes a directory listing, three free business trainings per year from your choice in our directory, three business luncheons per year, and large advertising at events sponsored by the Chamber of Commerce.</p>
-    </aside>
+
     <div>
-      <h1>Join the Community!</h1>
-      <p>Membership in our community of local businesses includes many benefits, please fill out the application form below if you are interested!</p>
-      <div class="formcontainer">
+      <h1>Contact Us</h1>
+      <p>If you have any questions or concerns, please let us know. Feel free to fill out the form below or call us at (702) 768-2947.</p>
+     
 
        
-        <form method="get" action="thanks.html">
+        <form method="get" action="thankscontact.html">
             <fieldset>
                
-                <p>Please provide your contact information:</p>
+                <p>Please feel free to contact us with any questions or concerns: </p>
                 <label class="top">First Name <input type="text" name="fname" pattern="[A-Za-z. -]{5,}" required></label>
 
                 <label class="top">Last Name <input type="text" name="lname" pattern="[A-Za-z. -]{5,}" required></label>
@@ -93,43 +83,27 @@
                 </label>
     
                 <label class="top">Cell Phone <input type="tel" name="phone" required></label>
+
+                <label class="top">Message<textarea name="comment" placeholder="Please write your message here"></textarea></label>
     
             </fieldset>
-            <fieldset>
-               
-                <p>Please tell us about your business:</p>
-
-                <label class="top">Business Name <input type="text" name="bname" pattern="[A-Za-z. -]{5,}" required></label>
-
-                <label class="top">Business Address <input type="text" name="baddress"></label>
-
-                <label class="top">Business Website <input type="text" name="bwebsite"></label>
-
-                <label class="top">Business Description<textarea name="description"></textarea></label>
-
-                <label class="top">Membership Level Desired 
-                    <select name="mlevel">
-                        <option value="">Select Membership Level </option>
-                        <option value="gold">Gold - $1000</option>
-                        <option value="silver">Silver - $400</option>
-                        <option value="bronze">Bronze - $200</option>
-                        <option value="nonprofit">Non-profit - $100</option>
-                       
-                      
-                        
-                    </select>
-                </label>
-
-            </fieldset>
-            <input type="submit" value="Submit Application" class="submitBtn">
+           
+            <input type="submit" value="Submit Contact Form" class="submitBtn">
         </form>
     
     
        
        
-    </div>
+  
 
     </div>
+
+    <aside>
+        <h3>Tucson Area Map</h3>
+        <div class="iframeWrapper">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d216178.87412984102!2d-111.02389003401015!3d32.155832837546285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86d665410b2ced2b%3A0x73c32d384d16c715!2sTucson%2C%20AZ!5e0!3m2!1sen!2sus!4v1626288461230!5m2!1sen!2sus" width="300" height="550" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    </aside>
 
   </div>
     

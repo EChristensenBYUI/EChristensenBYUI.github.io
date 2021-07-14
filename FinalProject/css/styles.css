@@ -416,3 +416,24 @@ textarea {
 input[type="radio"] {
     max-width: 50px;
 }
+
+aside img {
+    display: block;
+    margin: 0 auto;
+    border: 3px solid #0B1D51;
+    max-width: 250px;
+    width: 80%;
+}
+
+aside iframe {
+    width: 100%;
+
+    display: block;
+   
+}
+.iframeWrapper {
+    border: 3px solid #0B1D51;
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+}
