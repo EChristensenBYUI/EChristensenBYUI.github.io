@@ -270,5 +270,11 @@
     justify-self: left;
 }
 
+textarea, select {
+    min-width: 340px;
+}
+
+
+
 
 }

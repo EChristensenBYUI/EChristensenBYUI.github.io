@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Lato:ital,wght@0,400;0,700;1,300;1,400&family=Pacifico&display=swap" rel="stylesheet">    
+    <meta name="description" content="Elise Christensen's Chamber of Commerce - Tucson Assignment">
+    <title>Tucson Chamber of Commerce Sample Site</title>
+    <script src="js/index.js" defer></script>
+
+</head>
+<body>
+    <main>
+<header>
+    <div class="headerLeft">
+       <div>
+        <a href="/FinalProject/index.html"><img src="images/roadrunnericon.png" alt="roadrunner icon" class="icon"></a>
+        <a href="/FinalProject/index.html"></a><img src="images/roadrunnericon_mobile.png" alt="roadrunner icon" class="icon_mobile"></a>
+        
+    </div>
+    <h1>Tucson, Arizona</h1>
+    <h2> Chamber of Commerce</h2>
+    </div>
+    <div class="headerRight">
+        <h3>Today's Weather:</h3>
+       
+        <p>
+            <span id="temp"></span> 
+             <span id="desc"></span>
+             <span id="humid"></span>
+         </p>
+        
+    </div>
+</header>
+
+<nav>
+    <ul class="navigation">
+        <li><a class="ham" href="#">&#9776;</a></li>
+        <li ><a href="/FinalProject/index.html"> Home</a></li>
+        <li><a href="#">Tucson</a></li>
+        <li class="active"><a href="/FinalProject/join.html">Join</a></li>
+        <li><a href="/FinalProject/directory.html">Directory</a></li>
+        <li><a href="#">Contact</a></li>
+
+
+    </ul>
+</nav>
+
+<div class="homephotos">
+    <img src="images/homephoto_theater-min.png" alt="downtown movie theater">
+    <img src="images/homephoto_pizza-min.png" alt="pizza restaurant">
+    <img src="images/homephoto_butterflies-min.png" alt="butterfly mural">
+    <img src="images/homephoto_crescent-min.png" alt="crescent store sign">
+
+</div>
+<div class="maincontent">
+    <aside style="margin-left: 15px;">
+        <h3>Check out our Membership Levels:</h3>
+        <h4>Non-Profit - $100</h4>
+        <p>If your business is classified as a non-profit we have a discounted fee. You must be recognized by the governemnt as non-profit and this membership includes all of the bronze member benefits.</p>
+        <h4>Bronze - $200</h4>
+        <p>Bronze members receive a directory listing, a badge to be displayed at business and/or on the business website, and advertising at events sponsored by the Chamber of Commerce.</p>
+        <h4>Silver - $400</h4>
+        <p>Silver members enjoy a directory listing, one free business training each year (with a directory to other recommended trainings), advertising at events sponsored by the Chamber of Commerce, and provided social media posts.</p>
+        <h4>Gold - $1000</h4>
+        <p>The Gold membership includes a directory listing, three free business trainings per year from your choice in our directory, three business luncheons per year, and large advertising at events sponsored by the Chamber of Commerce.</p>
+    </aside>
+    <div>
+      <h1>Join the Community!</h1>
+      <p>Membership in our community of local businesses includes many benefits, please fill out the application form below if you are interested!</p>
+      <div class="formcontainer">
+
+       
+        <form method="get" action="thanks.html">
+            <fieldset>
+               
+                <p>Please provide your contact information:</p>
+                <label class="top">First Name <input type="text" name="fname" pattern="[A-Za-z. -]{5,}" required></label>
+
+                <label class="top">Last Name <input type="text" name="lname" pattern="[A-Za-z. -]{5,}" required></label>
+
+                <label class="top">Title <input type="text" name="title" pattern="[A-Za-z. -]{5,}"></label>
+    
+                <label class="top">
+                    Email <input type="email" name="email" placeholder="myemail@email.com" required>
+                </label>
+    
+                <label class="top">Cell Phone <input type="tel" name="phone" required></label>
+    
+            </fieldset>
+            <fieldset>
+               
+                <p>Please tell us about your business:</p>
+
+                <label class="top">Business Name <input type="text" name="bname" pattern="[A-Za-z. -]{5,}" required></label>
+
+                <label class="top">Business Address <input type="text" name="baddress"></label>
+
+                <label class="top">Business Website <input type="text" name="bwebsite"></label>
+
+                <label class="top">Business Description<textarea name="description"></textarea></label>
+
+                <label class="top">Membership Level Desired 
+                    <select name="mlevel">
+                        <option value="">Select Membership Level </option>
+                        <option value="gold">Gold - $1000</option>
+                        <option value="silver">Silver - $400</option>
+                        <option value="bronze">Bronze - $200</option>
+                        <option value="nonprofit">Non-profit - $100</option>
+                       
+                      
+                        
+                    </select>
+                </label>
+
+            </fieldset>
+            <input type="submit" value="Submit Application" class="submitBtn">
+        </form>
+    
+    
+       
+       
+    </div>
+
+    </div>
+
+  </div>
+    
+<footer>
+
+
+<p>&#169; <span id="year"></span> | Elise Christensen | Nevada | <a href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+<p>Photo credits: Ashley Maxwell |  <a href="https://flyclipart.com/road-runner-icons-noun-project-roadrunner-png-244530">Road Runner Icon</a></p>
+<p>Last Modified: <span id="lastmod"></span></p>
+
+
+</footer>
+</main>
+<script defer src="js/directory.js"></script>
+</body>
+</html>

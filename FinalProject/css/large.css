@@ -51,7 +51,15 @@
     }
 
 
+    form {
+        min-width: 600px;
+        margin: 0 auto;
+        width: 90%;
+    }
 
+    form label.top input {
+        display: flex;
+    }
 
 
 }
