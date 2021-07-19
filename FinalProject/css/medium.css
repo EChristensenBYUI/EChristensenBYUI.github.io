@@ -80,6 +80,10 @@
        margin-right: 0px;
    }
 
+   .headerRight h3 {
+       font-size: 1.5rem;
+   }
+
    img.icon {
        display: block;
    }
@@ -158,16 +162,75 @@
 
    .forecast {
        background-color: #086375;
-       width: 60%;
+       width: 80%;
        margin: 1em auto;
-       padding: 20px;
+       padding-top: 20px;
+       padding-bottom: 20px;
        display: block;
+ 
+   }
+
+   .forecast h1 {
+        width: 100%;
+       text-align: center;
+       background-color: #FAF0DB;
+       padding: 10px 0;
+       margin: 0;
+
    }
 
    .forecast p {
        text-align: center;
        color: #FAF0DB;
    }
+
+   .forecastItem {
+       width: 80%;
+       margin: .5em auto;
+       display: block;
+       background-color: #A28F80;
+       padding-top: 10px;
+       border:5px solid #0E0A4A;
+   }
+
+
+
+   .forecastHead p{
+       font-size: 1.5rem;
+       background-color: #0E0A4A;
+       margin: 0;
+       text-align: left;
+       font-style: italic;
+       padding-left: 15px;
+   }
+   
+   .forecastItem img{
+        float: left;
+        margin-top: 3%;
+   }
+
+   .forecastInfo {
+     
+       background-color: #FAF0DB;
+       border: 3px solid #0E0A4A;
+       display: inline-block;
+       margin-top: 15px;
+       margin-bottom: 15px;
+       width: 60%;
+        padding-top: 10px;
+   }
+
+   .forecastInfo p {
+       color: #0E0A4A;
+       font-weight: 600;
+       margin-top: 0;
+   }
+
+   .forecastInfo p:first-child {
+       font-size: 2.1rem;
+       margin: 0;
+   }
+
 
    aside {
 

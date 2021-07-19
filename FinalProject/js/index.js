@@ -23,7 +23,7 @@ const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
 
 //Weather - Current (top of home page)
 
-const apiURL="https://api.openweathermap.org/data/2.5/onecall?lat=32.253460&lon=-110.911789&exclude=minutely&appid=ab1af1b162d4021b8b58055befd97b83&units=imperial";
+const apiURL="https://api.openweathermap.org/data/2.5/onecall?lat=32.253460&lon=-110.911789&exclude=minutely,hourly&appid=ab1af1b162d4021b8b58055befd97b83&units=imperial";
 
 fetch(apiURL) 
   .then((response) => response.json())
@@ -34,27 +34,38 @@ fetch(apiURL)
 
    document.getElementById('desc').textContent = jsObject.current.weather[0].description;
 
-   document.getElementById('humid').textContent = "Humidity: " + jsObject.current.humidity;
+   document.getElementById('humid').textContent = "Humidity: " + jsObject.current.humidity + "%";
 
    let day = 0;
    const dayofWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
-   //filter the json data to just one time a day
-   //const fiveDayForecast = jsObject.list.filter(forecast => forecast.dt_txt.includes('18:00:00'));
 
-  // console.log(fiveDayForecast);
-// loop through each day
-for (let i=0; i < 2; i++)  {
-	   let d = new Date(value.dt * 1000).toLocaleDateString("en", {weekday: "long"});
-	  console.log(d);
-	   document.getElementById(`dayofweek${day+1}`).textContent = dayofWeek[d.getDay()];
-	   document.getElementById(`forecast${day+1}`).textContent = x.main.temp.toFixed(0) + '\u00B0' + 'F';
+
+const fiveDayForecast = jsObject.daily;
+
+fiveDayForecast.forEach( x => {
+      var dayname = new Date(x.dt * 1000);
+
+
+
+	   document.getElementById(`dayofweek${day+1}`).textContent = dayofWeek[dayname.getDay()];
+	   document.getElementById(`forecast${day+1}`).textContent = x.temp.day.toFixed(0) + '\u00B0' + 'F';
+ 
+
+
+
+  
 	   const image = 'http://openweathermap.org/img/wn/' + x.weather[0].icon + '@2x.png';
 	   const desc = x.weather[0].description;
 	   document.getElementById(`icon${day+1}`).setAttribute('src', image);
 	   document.getElementById(`icon${day+1}`).setAttribute('alt', desc);
+
+    document.getElementById(`mintemp${day+1}`).textContent= x.temp.min.toFixed(0) + '\u00B0' + 'F';
+         document.getElementById(`desc${day+1}`).textContent = x.weather[0].main;
+         document.getElementById(`maxtemp${day+1}`).textContent= x.temp.max.toFixed(0) + '\u00B0' + 'F';
+
 	   day++;
-   };
+   });
 
 
   })

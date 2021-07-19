@@ -47,6 +47,8 @@ header h2 {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     text-align: center;
+    font-size: 1.2rem;
+    margin-left: 0;
 }
 
 .headerRight p{
@@ -81,8 +83,8 @@ p {
     position: absolute;
     background-color: transparent;
     z-index: 500;
-    right: 15px;
-    margin-top: -50px;
+    right: 5px;
+    margin-top: -55px;
 }
 
 .navigation li:first-child a {

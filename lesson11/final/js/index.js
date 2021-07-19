@@ -74,3 +74,28 @@ let thedate = new Date();
 
     
         //try to do 'querySelector' instead of getElementbyID
+
+        //Range for Storm Center
+
+function adjustRating(rating) {
+    document.getElementById("ratingvalue").innerHTML = rating;
+  }
+
+
+  if ("firstV" in localStorage){
+
+
+
+    var first = new Date(localStorage.getItem('firstV'));
+    var difference = now.getTime() - first.getTime();
+    const numDays = difference / (1000 * 3600 * 24);
+    
+  
+document.querySelector('.days').innerHTML = 'Thanks for stopping by! It has been ' + numDays.toFixed(0) + ' days since you visited us';
+}
+
+else {
+  document.querySelector('.days').innerHTML = 'Welcome! This is your first visit to the page!';
+}
+
+localStorage.setItem('firstV', now);

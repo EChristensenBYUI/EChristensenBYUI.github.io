@@ -11,7 +11,7 @@ fetch(requestURL)
     return response.json();
   })
   .then(function (jsonObject) {
-        console.table(jsonObject);
+       // console.table(jsonObject);
 
         const directory = jsonObject['directory'];
         for (let i = 0; i < directory.length; i++ ) {
