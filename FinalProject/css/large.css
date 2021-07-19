@@ -21,6 +21,36 @@
     .listview .Ditem h2 {
         width: 250px;
     }
+
+    .forecast {
+        width: 90%;
+    }
+
+    .forecastFlex {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+
+    .forecastInfo {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .Fcontent {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+        margin: 0;
+    }
+
+    .Fcontent img {
+        min-width: 75px;
+    }
+
+    .forecastInfo p:first-child {
+        font-size: 1.2rem;
+    }
     
 }
 

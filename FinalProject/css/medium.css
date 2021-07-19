@@ -173,10 +173,22 @@
    .forecast h1 {
         width: 100%;
        text-align: center;
-       background-color: #FAF0DB;
+
        padding: 10px 0;
        margin: 0;
+   }
 
+   .forecastsection {
+    background-color: #FAF0DB;
+    width: 100%;
+
+   }
+
+   .forecastsection p {
+       color: #0E0A4A!important;
+       width: 80%;
+       margin: 0 auto;
+       padding-bottom: 10px;
    }
 
    .forecast p {
@@ -203,10 +215,18 @@
        font-style: italic;
        padding-left: 15px;
    }
+
+   .Fcontent {
+       margin: 0 auto;
+       display: block;
+       width: 90%;
+   }
    
    .forecastItem img{
         float: left;
         margin-top: 3%;
+        width: 25%;
+        max-width: 100px;
    }
 
    .forecastInfo {
@@ -218,6 +238,7 @@
        margin-bottom: 15px;
        width: 60%;
         padding-top: 10px;
+        margin-left: 25px;
    }
 
    .forecastInfo p {
