@@ -181,7 +181,9 @@
    .forecastsection {
     background-color: #FAF0DB;
     width: 100%;
-
+    border-top: 5px solid #0E0A4A;
+    border-bottom: 5px solid #0E0A4A;
+    margin-bottom: 15px;
    }
 
    .forecastsection p {
@@ -214,6 +216,7 @@
        text-align: left;
        font-style: italic;
        padding-left: 15px;
+       padding-bottom: 5px;
    }
 
    .Fcontent {
@@ -250,6 +253,17 @@
    .forecastInfo p:first-child {
        font-size: 2.1rem;
        margin: 0;
+   }
+
+   .heatwarning {
+       background-color: #0E0A4A;
+
+   }
+
+   .heatwarning p {
+       padding: 10px 0;
+       font-size: 1.2rem;
+       font-style: italic;
    }
 
 

@@ -51,6 +51,11 @@
     .forecastInfo p:first-child {
         font-size: 1.2rem;
     }
+
+    .forecastInfo p:nth-child(2) {
+        max-width: 80px;
+        margin: .5rem auto;
+    }
     
 }
 
@@ -90,6 +95,14 @@
 
     form label.top input {
         display: flex;
+    }
+
+    .forecast {
+        width: 100%;
+    }
+
+    .forecastInfo p:first-child {
+        font-size: 1.5rem;
     }
 
 

@@ -37,7 +37,7 @@ fetch(apiURL)
    document.getElementById('humid').textContent = "Humidity: " + jsObject.current.humidity + "%";
 
    let day = 0;
-   const dayofWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+   const dayofWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
 
 
