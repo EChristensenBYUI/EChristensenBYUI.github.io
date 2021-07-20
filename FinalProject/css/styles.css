@@ -456,3 +456,15 @@ aside iframe {
     max-width: 30px;
     margin: 5px;
 }
+
+img.tucsonpage {
+    display: none;
+}
+
+.tucsonimages {
+    display: none;
+}
+
+img.desktopimg {
+    display: none;
+}

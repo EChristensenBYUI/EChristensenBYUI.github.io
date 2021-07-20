@@ -387,5 +387,25 @@ textarea, select {
     margin: 0 50px;
 }
 
+img.tucsonpage {
+    display: block;
+    margin: 0 1em;
+    border: 5px solid #0E0A4A;
+    padding: 3px;
+}
+
+.tucsonimages {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tucsonimages img {
+    min-width: 0;
+    margin: 1em;
+    border: 5px solid #0E0A4A;
+    padding: 3px;
+}
 
 }

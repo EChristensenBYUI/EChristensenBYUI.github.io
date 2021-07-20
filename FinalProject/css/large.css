@@ -57,6 +57,11 @@
         margin: .5rem auto;
     }
 
+    img.desktopimg {
+        display: block;
+        margin-top: 2rem;
+    }
+
 
     
 }
