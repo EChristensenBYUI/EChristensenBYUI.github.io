@@ -119,13 +119,16 @@
 
    .homephotos {
        display: flex;
-       width: 100%;
+       width: 99%;
        gap: 5px;
-       margin-top: 10px;
+       margin: 10px auto;
    }
 
    .homephotos img {
        min-width: 0;
+       outline: 2px solid #FAF0DB;
+       outline-offset: -10px;
+       border: 5px solid #0E0A4A;
    }
 
    .homephotos img:hover {
@@ -376,7 +379,13 @@ textarea, select {
     min-width: 340px;
 }
 
+.footerContent {
+    margin: 0 auto;
+}
 
+.social {
+    margin: 0 50px;
+}
 
 
 }

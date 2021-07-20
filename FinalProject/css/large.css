@@ -56,6 +56,8 @@
         max-width: 80px;
         margin: .5rem auto;
     }
+
+
     
 }
 
@@ -105,5 +107,12 @@
         font-size: 1.5rem;
     }
 
+    .footerContent {
+        margin: 0 auto;
+    }
+    
+    .social {
+        margin: 0 90px;
+    }
 
 }
