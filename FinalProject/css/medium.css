@@ -255,9 +255,11 @@
        margin: 0;
    }
 
+   
+
    .heatwarning {
        background-color: #0E0A4A;
-
+        display: none;
    }
 
    .heatwarning p {
@@ -291,6 +293,8 @@
    .Dcontainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .Ditem img {

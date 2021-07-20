@@ -45,15 +45,12 @@ const fiveDayForecast = jsObject.daily;
 
 fiveDayForecast.forEach( x => {
       var dayname = new Date(x.dt * 1000);
-
+      var hightemp = x.temp.max;
+     // console.log(hightemp);
 
 
 	   document.getElementById(`dayofweek${day+1}`).textContent = dayofWeek[dayname.getDay()];
 	   document.getElementById(`forecast${day+1}`).textContent = x.temp.day.toFixed(0) + '\u00B0' + 'F';
- 
-
-
-
   
 	   const image = 'http://openweathermap.org/img/wn/' + x.weather[0].icon + '@2x.png';
 	   const desc = x.weather[0].description;
@@ -64,8 +61,15 @@ fiveDayForecast.forEach( x => {
          document.getElementById(`desc${day+1}`).textContent = x.weather[0].main;
          document.getElementById(`maxtemp${day+1}`).textContent= x.temp.max.toFixed(0) + '\u00B0' + 'F';
 
+      if (hightemp > 90) {
+        document.querySelector('.heatwarning').style.display="block";
+      }
+
 	   day++;
    });
+
+
+
 
 
   })
@@ -74,4 +78,3 @@ fiveDayForecast.forEach( x => {
 
 
 
-//	for (let i=0; i < 2; i++) {
