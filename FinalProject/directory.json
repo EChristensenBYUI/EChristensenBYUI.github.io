@@ -49,6 +49,13 @@
         "logourl":"images/logos/silversaddle_logo.png",
         "website":"https://thesilversaddlesteakhouse.com/",
         "phone":"(520) 622-6253"
+    },
+
+    {
+        "name":"The Mini Time Machine",
+        "logourl":"images/logos/TMTM_logo.png",
+        "website":"https://theminitimemachine.org/",
+        "phone":"(520) 881-0606"
     }
 
 ]

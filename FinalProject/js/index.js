@@ -28,7 +28,7 @@ const apiURL="https://api.openweathermap.org/data/2.5/onecall?lat=32.253460&lon=
 fetch(apiURL) 
   .then((response) => response.json())
   .then((jsObject) => {
-   console.log(jsObject);
+   //console.log(jsObject);
 
    document.getElementById('temp').textContent = jsObject.current.temp.toFixed(0) + '\u00B0' + 'F' + "";
 
