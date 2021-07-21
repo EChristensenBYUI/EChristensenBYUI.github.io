@@ -194,8 +194,9 @@ h3 {
 }
 
 .button a:hover {
-	background-color: #809BCE;
+	background-color: #FAF0DB;
 	color: #0E0A4A;
+    border: 3px solid #0E0A4A;
 }
 
 footer{
