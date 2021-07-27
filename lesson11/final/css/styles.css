@@ -541,6 +541,11 @@ select {
     width: 100%;
 }
 
+input[type="text"], textarea {
+	width: 100%;
+}
+
+
 textarea {
     height: 10rem;
     margin-bottom: 1rem;
